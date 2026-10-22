@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-container": "#cad3ff",
+          "surface": "#faf8ff",
+          "on-surface-variant": "#434655",
+          "surface-container": "#eaedff",
+          "on-primary": "#ffffff",
+          "primary": "#0037b0",
+          "surface-container-low": "#f2f3ff",
+          "background": "#faf8ff",
+          "primary-container": "#1d4ed8",
+          "outline-variant": "#c4c5d7",
+          "inverse-surface": "#283044",
+          "on-secondary-container": "#663500",
+          "on-tertiary": "#ffffff",
+          "secondary": "#904d00",
+          "on-tertiary-fixed-variant": "#005137",
+          "on-tertiary-container": "#76eab6",
+          "surface-variant": "#dae2fd",
+          "surface-container-highest": "#dae2fd",
+          "on-secondary-fixed-variant": "#6e3900",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed-dim": "#b7c4ff",
+          "secondary-container": "#fe932c",
+          "outline": "#747686",
+          "primary-fixed": "#dce1ff",
+          "inverse-on-surface": "#eef0ff",
+          "surface-bright": "#faf8ff",
+          "tertiary-container": "#006948",
+          "surface-tint": "#2151da",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed": "#002114",
+          "surface-dim": "#d2d9f4",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#0039b5",
+          "tertiary": "#004f35",
+          "on-secondary": "#ffffff",
+          "on-background": "#131b2e",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#2f1500",
+          "tertiary-fixed-dim": "#68dba9",
+          "on-surface": "#131b2e",
+          "on-primary-fixed": "#001551",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#85f8c4",
+          "error-container": "#ffdad6",
+          "inverse-primary": "#b7c4ff",
+          "secondary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#ffb77d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "gutter-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="Cialfo AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3vf2gI9z9kN05KW0a6nvsE9CnMssLyZ2mf3KaIIo6CWnW7q3y4eIIMQ4R9XAt9AFgsUA6b7eZWAWML1p_FFo-c0GVWxjqLyfwA-BqTFYf4Y3urYcSKVgGRZAJ3x-io5zKZ8JvO8-e6tPNIbkUMdM_0hhvPM2vX2DuClK3PIA9fllNV2jD8adWnM0EZYb3bbSlEGVfWT7gWuI0o6kFq1VPn_YXjjG69tZDd1b7o6rXPC5y3m_EhVlwrsE"/><span class="font-title-md text-title-md text-primary tracking-tight font-bold hidden sm:inline-block">Cialfo.ai</span><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-full font-semibold uppercase tracking-wider hidden md:inline-block">Global CCR</span></div><div class="flex-1 max-w-xl mx-space-md hidden lg:block"><div class="relative flex items-center w-full h-11 bg-surface-container-lowest rounded-full px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-outline mr-space-xs text-[20px]">search</span><input class="w-full bg-transparent border-0 focus:outline-none font-body-sm text-body-sm text-on-surface placeholder-outline" placeholder="Search universities, courses (e.g. STEAM, Football), scholarships, articles..." type="text"/><span class="flex items-center font-label-sm text-label-sm text-outline bg-surface-container-low px-space-xs py-0.5 rounded font-medium flex-shrink-0">⌘K</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant cursor-pointer hover:bg-surface-container hover:text-on-surface transition-colors"><span>Student (12th Grader)</span><span class="material-symbols-outlined text-[18px]">arrow_drop_down</span></div><button class="relative flex items-center justify-center p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full font-bold">3</span></button><button class="flex items-center gap-space-xs p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat_bubble</span></button><button class="flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-md py-1.5 rounded-full font-label-md text-label-md font-semibold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors shadow-sm" type="button"><span>🦁</span><span class="hidden sm:inline-block">Ask Saige</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQaDufI0EFe_Co8gJC-e_Hhi8MVvLmUgYVfLp_oSNFFbXUC5bAw18Gr7d5b7s1J8dxcNsNxtjKyCnXg-a0L9xcocfo06B-pu2BB1y4N9xd8OzEPCcph-fBfple7bNJb3no_rWvbz8SO_rteFjqcCcM_NlSUBdwBLgEinT73_C8PVDKxLsoUU5HobHgosdRb2Hi2lM-FgCUXOahwBaI3bctu6_FRSZR28yLmYnRNZkvyGdNrmViLN_uw"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Sarah Lin</span><span class="font-label-sm text-label-sm text-outline leading-tight">Class of 2026</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="home-roadmap" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span>Home &amp; Roadmap</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="universities-courses" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span>Universities &amp; Courses</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="bookmarks-compare" href="#"><span class="material-symbols-outlined text-[22px]">bookmarks</span><span>Bookmarks &amp; Compare</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="applications-direct-apply" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span>Applications &amp; Direct Apply</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg transition-all bg-primary-container text-on-primary font-bold shadow-sm" data-path="structured-recommendations" href="#"><span class="material-symbols-outlined text-[22px]">edit_document</span><span>Structured Recommendations</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discovery-events" href="#"><span class="material-symbols-outlined text-[22px]">public</span><span>Discovery &amp; Events</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="careers-hubs" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span>Careers &amp; Hubs</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1"><div class="flex items-center gap-1.5 font-semibold text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span><span>Singapore American School</span></div><div class="text-outline">Counselor: Dr. Rachel Adams</div><div class="flex items-center gap-1 text-tertiary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span>Direct Apply Partner: Active</span></div></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface w-full min-h-screen px-margin py-margin"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Policy Guardrail & Context Header -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-space-xs py-0.5 rounded-full">
+            CCR Policy Compliant • Grade 12
+          </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container px-space-xs py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            cDocs Ready
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Teacher Letter of Recommendation (LOR) Studio
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Complete your structured brag sheet to unlock precision counselor endorsements. Tier 1 syncs universally; Tier 2 tailors evidence for individual faculty members.
+        </p>
+</div>
+<!-- Policy Quota Stat Pill Box -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest p-space-sm rounded-xl shadow-sm self-start md:self-auto">
+<div class="flex items-center justify-center w-12 h-12 rounded-lg bg-surface-container text-primary font-headline-md text-headline-md font-bold">
+          1/2
+        </div>
+<div class="flex flex-col pr-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Teacher Allocation</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">1 Remaining Slot</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Core 5 Subjects Only</span>
+</div>
+</div>
+</div>
+<!-- Policy Guidance Callout Strip -->
+<div class="mt-space-md flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">verified_user</span>
+<div class="flex-1">
+<strong class="font-semibold text-primary">School Policy Guardrail:</strong> Core 5 academic subjects (English, Math, Science, Social Studies, Foreign Language) recommended for Grade 11/12. Max requests: 2 Recommenders (Current: 1 / 2 requested). Requests undergo counselor review before cDocs transmission.
+      </div>
+</div>
+</div>
+<!-- Recommender Selector Deck (Bento Tab Switcher) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Recommender 1: Active Focus (Mr. David Hoffman) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-md transition-all cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Warm portrait of David Hoffman, senior AP Physics instructor in an academic lab setting with clean modern studio lighting, natural depth of field and soft ambient tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoA_KQcP0zB3EJ6GKQ71KZ8K_Qxm5Oj-FaJYGUZF1UITeRvyRoK3Pk51RnmJK41_nSCLJWdAQY1XJjvIcqEFuC03NunLDbqj0TJp17F5mEcgCvg_53VqRnvjZ45bmAweqhzU1YLV_7xolxtuTbjzxOPvaziW2xlOVPUoDuoKYBMnHh5OGRff8yauIovwFu0xcs-33qxDoOYDOAjvfWPw4GXUDOZWpO41MHcXxJo7JT_pwMoBe3-kunLg"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Mr. David Hoffman</span>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">AP Physics C &amp; IB Physics HL</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-low text-primary px-space-xs py-1 rounded-full font-bold uppercase tracking-wider">
+          Active Request
+        </span>
+</div>
+<!-- Status Progress Matrix -->
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1.5">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-tertiary text-[16px]">translate</span>
+            Drafting via Multilingual LOR Studio
+          </span>
+<span class="text-primary font-bold">70% Completed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 70%"></div>
+</div>
+</div>
+</div>
+<!-- Recommender 2: Pending Action (Ms. Elena Rostova) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Professional studio portrait of Elena Rostova, high school AP English Literature teacher, soft warm ambient library background, thoughtful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCealBDioSBcrqYGSLe4bDg_q9ajPCqtfonMVuKs0yO5VPqLf9IYaLuxeSY70Kwn9RlgzHLvETJcV3rOQ6uoxUUiv8EulbWuSyozbH1fOjd2YTF-sUT6MEgN0PtNr-2LPIOBbIb5aDiTlbgekXuAoFJvI7M6Utztjbxl-Lh2vSxPdjVDABTdKuaQDqTlZ_a6hyF9SBnMakFy7dRcUeeli1TtegJ50FBz4m35nyioVRW_gxSNpBBhFLTAA"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Ms. Elena Rostova</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-surface-container-lowest px-1.5 py-0.5 rounded">Core 5 Humanities</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">AP English Literature &amp; Composition</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-1 rounded-full font-bold uppercase tracking-wider">
+          Action Required
+        </span>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest rounded-lg p-space-sm">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1.5">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">pending_actions</span>
+            Tier 2 Questions Pending Response
+          </span>
+<span class="text-secondary font-bold">30% Complete</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all duration-500" style="width: 30%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Multilingual AI Translation & Counselor Gate Callout Banner (Solves PP-08) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2.5 rounded-xl bg-tertiary-container text-on-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">language_chinese_quick</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">Multilingual LOR Studio Enabled</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-container-lowest px-space-xs py-0.5 rounded-full font-bold">PP-08 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 max-w-3xl">
+            Teachers may compose recommendation narratives in their primary language (e.g., <strong>Korean, Turkish, Mandarin, Spanish</strong>). Cialfo AI generates contextually precise academic English phrasing, systematically preserved and approved by Dr. Rachel Adams before final delivery to cDocs.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0 self-end lg:self-center bg-surface-container-lowest px-space-sm py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[16px]">lock_reset</span>
+<span>Counselor Review Gate: <strong>Required</strong></span>
+</div>
+</div>
+</div>
+<!-- Two-Tier Questionnaire Canvas (Solves PP-01) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Navigation Rail: Tier Overview & Sync Stats -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Sync Status Box -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Universal Core Data</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container px-space-xs py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span> Auto-Synced
+          </span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Tier 1: Global Reflections</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Shared across all your counselor and teacher recommenders. Edit once, propagated everywhere to avoid duplicate writing.
+        </p>
+<div class="mt-space-xs space-y-2">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded font-label-sm text-label-sm">
+<span class="text-on-surface">Question 1: Intellectual Curiosity</span>
+<span class="text-tertiary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Complete
+            </span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded font-label-sm text-label-sm">
+<span class="text-on-surface">Question 2: Milestones &amp; Context</span>
+<span class="text-tertiary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Complete
+            </span>
+</div>
+</div>
+</div>
+<!-- Specific Context Box -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Dynamic Tier</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-full font-semibold">
+            Mr. Hoffman Only
+          </span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Tier 2: Course-Specific Evidence</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tailored explicitly to Mr. Hoffman's AP Physics lab work and your prospective Aerospace Engineering trajectory.
+        </p>
+<div class="mt-space-xs space-y-2">
+<div class="flex items-center justify-between p-space-xs bg-primary-fixed/30 rounded font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Question 1: Lab Challenge</span>
+<span class="text-primary font-bold">In Progress (142w)</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container rounded font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Question 2: University Major Alignment</span>
+<span class="text-outline font-semibold">Drafting</span>
+</div>
+</div>
+</div>
+<!-- Pedagogical Evidence Preview Card -->
+<div class="rounded-xl bg-surface-container-high p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface font-title-md text-title-md font-bold mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+<span>Admissions Impact Note</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Selective universities value <strong>concrete anecdotes over general praise</strong>. When describing your physics lab challenge, highlight moments of analytical friction and how you resolved unexpected experimental anomalies.
+        </p>
+</div>
+</div>
+<!-- Right Workspace: Interactive Questionnaire Editor -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Section 1: Tier 1 (Universal Sync) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface px-space-xs py-0.5 rounded font-bold uppercase tracking-wider">
+                Tier 1 System
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+                Synced to 2 Teachers
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+              Common Student Self-Reflections
+            </h3>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container-low px-space-sm py-1 rounded-full font-medium self-start sm:self-auto">
+<span>☁️</span>
+<span>All changes saved to cloud</span>
+</div>
+</div>
+<!-- Tier 1 Question 1 -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-start justify-between gap-space-sm">
+<label class="font-title-md text-title-md text-on-surface font-semibold">
+              1. Three key adjectives that best describe your intellectual curiosity and work ethic, with concrete anecdotes.
+            </label>
+<span class="font-label-sm text-label-sm text-outline font-mono flex-shrink-0">Auto-filled</span>
+</div>
+<div class="relative mt-space-xs">
+<textarea class="w-full bg-surface-container-lowest p-space-md rounded-lg font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none transition-all resize-none shadow-sm" readonly="" rows="4">Resilient, Analytical, Collaborative.
+During our junior year terminal velocity analysis, our photogates systematically malfunctioned under ambient fluorescent flicker. Instead of fabricating estimated timestamps, I organized a peer troubleshooting group to redesign the optocoupler shroud using cardboard and black tape, restoring 99.4% measurement reliability over three late afternoons.</textarea>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>Locked for uniform counselor parity</span>
+<span>72 words</span>
+</div>
+</div>
+<!-- Tier 1 Question 2 -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-start justify-between gap-space-sm">
+<label class="font-title-md text-title-md text-on-surface font-semibold">
+              2. Significant extenuating circumstances, family responsibilities, or non-academic milestones (e.g. caring for siblings, 20 hrs/wk part-time job, self-taught robotics).
+            </label>
+<span class="font-label-sm text-label-sm text-outline font-mono flex-shrink-0">Auto-saved</span>
+</div>
+<div class="relative mt-space-xs">
+<textarea class="w-full bg-surface-container-lowest p-space-md rounded-lg font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none transition-all resize-none shadow-sm" readonly="" rows="4">Caring for my 8-year-old sister three weekdays from 3:30 to 7:00 PM while my parents managed their family logistics business. Managed homework while guiding her through foundational coding logic, which honed my patience and ability to decompose complex engineering ideas into intuitive concepts.</textarea>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>Shared with Mr. Hoffman and Ms. Rostova</span>
+<span>54 words</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Tier 2 (Customized for Mr. Hoffman) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm bg-primary text-on-primary px-space-xs py-0.5 rounded font-bold uppercase tracking-wider">
+                Tier 2 System
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">
+                Dynamic Course Fields
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+              Course-Specific Teacher Questions: Mr. Hoffman (Physics)
+            </h3>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary bg-primary-fixed px-space-sm py-1 rounded-full font-bold self-start sm:self-auto">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Live Auto-Saving</span>
+</div>
+</div>
+<!-- Tier 2 Question 1 (Interactive) -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-start justify-between gap-space-sm">
+<label class="font-title-md text-title-md text-on-surface font-semibold" for="tier2-q1">
+              1. What specific laboratory experiment or challenge in AP/IB Physics pushed your thinking the most?
+            </label>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">bolt</span> High Impact
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mention quantitative friction, differential equations, or how you navigated theoretical anomalies.
+          </p>
+<div class="relative mt-space-xs">
+<textarea class="w-full bg-surface-container-lowest p-space-md rounded-lg font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none transition-all shadow-sm" id="tier2-q1" placeholder="Detail your laboratory experience..." rows="5">The rotational inertia and angular momentum conservation experiment with non-uniform cylinders. Our initial calculation model showed an unaccounted 14% kinetic loss that we originally attributed to human stop-clock reaction error. However, by writing an iterative MATLAB script to factor in rolling resistance and bearing thermal dissipation, I isolated the exact torque discrepancy. Working with Mr. Hoffman during tutorial periods pushed me to embrace iterative testing rather than simply expecting textbook-perfect curves.</textarea>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mt-1">
+<div class="flex items-center gap-2 text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Saved 8 seconds ago</span>
+</div>
+<div class="font-mono text-on-surface-variant font-semibold">
+<span class="text-primary font-bold">142</span> / 250 words
+            </div>
+</div>
+</div>
+<!-- Tier 2 Question 2 (Interactive) -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-start justify-between gap-space-sm">
+<label class="font-title-md text-title-md text-on-surface font-semibold" for="tier2-q2">
+              2. How does this course directly connect to your intended university major (Mechanical &amp; Aerospace Engineering)?
+            </label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Target: Fall 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Provide the teacher with specifics they can cite when referencing your future academic readiness.
+          </p>
+<div class="relative mt-space-xs">
+<textarea class="w-full bg-surface-container-lowest p-space-md rounded-lg font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none transition-all shadow-sm" id="tier2-q2" placeholder="Explain your disciplinary connection..." rows="4">The fluid dynamics and simple harmonic motion modules directly validated my interest in propulsion systems. After constructing our air-track projectile accelerator in Unit 4, I researched low-drag airfoil profiles on NASA Open Data. I hope Mr. Hoffman can emphasize my eagerness to bridge mathematical rigor with practical CAD iterations.</textarea>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mt-1">
+<div class="flex items-center gap-2 text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Saved just now</span>
+</div>
+<div class="font-mono text-on-surface-variant font-semibold">
+<span class="text-primary font-bold">58</span> / 200 words
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Floating Action Console -->
+<div class="sticky bottom-6 z-30 mt-space-md">
+<div class="rounded-2xl bg-inverse-surface text-inverse-on-surface p-space-md shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Status Meta -->
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">cloud_done</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-inverse-on-surface">Hoffman LOR Package</span>
+<span class="font-label-sm text-label-sm bg-surface-container/20 text-inverse-on-surface px-space-xs py-0.5 rounded">Auto-saved 10s ago</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline-variant">Both Tier 1 and Tier 2 criteria satisfied. Ready for teacher submission.</span>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container/10 hover:bg-surface-container/20 text-inverse-on-surface font-label-lg text-label-lg font-semibold transition-all" type="button">
+          Save Draft
+        </button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold shadow-md transition-all" type="button">
+<span>Send LOR Request to Teacher</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

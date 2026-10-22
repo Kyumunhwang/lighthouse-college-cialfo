@@ -1,0 +1,155 @@
+[
+  {
+    "id": "app-001",
+    "university_id": "univ-001",
+    "university_name": "Imperial College London",
+    "program": "BSc Computing",
+    "country": "United Kingdom",
+    "flag": "🇬🇧",
+    "portal": "Direct Apply",
+    "fee_waiver_applied": true,
+    "fee_waiver_saved_usd": 250,
+    "current_stage": "Offer Received",
+    "stage_step": 4,
+    "total_steps": 5,
+    "offer_type": "Conditional Offer",
+    "uea_counselor": "Marcus Sterling (Cialfo UK Senior Advisor)",
+    "urgent_chat_available": true,
+    "conditions": [
+      {
+        "id": "cond-1",
+        "description": "Achieve an overall IB score of at least 39 points",
+        "predicted_grade": 41,
+        "target_grade": 39,
+        "status": "On Track",
+        "verified": false
+      },
+      {
+        "id": "cond-2",
+        "description": "Achieve Grade 7 in IB Mathematics: Analysis & Approaches HL",
+        "predicted_grade": 7,
+        "target_grade": 7,
+        "status": "On Track",
+        "verified": false
+      },
+      {
+        "id": "cond-3",
+        "description": "Achieve Grade 6 in IB Physics HL",
+        "predicted_grade": 6,
+        "target_grade": 6,
+        "status": "Borderline",
+        "verified": false
+      },
+      {
+        "id": "cond-4",
+        "description": "English Language Proficiency: IELTS Academic Overall 7.0 (no subscore below 6.5)",
+        "predicted_grade": 8.0,
+        "target_grade": 7.0,
+        "status": "Met & Verified",
+        "verified": true
+      }
+    ],
+    "flywire_payment": {
+      "item": "Tuition Deposit & Confirmation Fee",
+      "amount_gbp": 2000,
+      "amount_usd": 2610,
+      "status": "Pending Payer Action",
+      "currency_options": [
+        "USD",
+        "SGD",
+        "GBP",
+        "EUR",
+        "KRW",
+        "INR"
+      ],
+      "flywire_reference": "FW-IMP-2026-90412",
+      "last_updated": "2026-10-21 14:30 UTC"
+    },
+    "visa_assistance": {
+      "status": "Pre-CAS Stage",
+      "advisor_assigned": "Marcus Sterling",
+      "success_rate": "100%",
+      "next_step": "Obtain Confirmation of Acceptance for Studies (CAS) after final IB results"
+    }
+  },
+  {
+    "id": "app-002",
+    "university_id": "univ-003",
+    "university_name": "University of Sydney",
+    "program": "Bachelor of Advanced Computing",
+    "country": "Australia",
+    "flag": "🇦🇺",
+    "portal": "Direct Apply",
+    "fee_waiver_applied": true,
+    "fee_waiver_saved_usd": 200,
+    "current_stage": "Direct Apply Approved",
+    "stage_step": 5,
+    "total_steps": 5,
+    "offer_type": "Unconditional Offer",
+    "uea_counselor": "Elena Wong (Cialfo Oceania Advisor)",
+    "urgent_chat_available": true,
+    "conditions": [
+      {
+        "id": "cond-aus-1",
+        "description": "Official High School Completion Certificate & Transcript",
+        "predicted_grade": 41,
+        "target_grade": 34,
+        "status": "Met & Verified",
+        "verified": true
+      }
+    ],
+    "flywire_payment": {
+      "item": "First Semester Tuition Deposit",
+      "amount_aud": 5500,
+      "amount_usd": 3680,
+      "status": "Processing in Transit",
+      "currency_options": [
+        "USD",
+        "SGD",
+        "AUD"
+      ],
+      "flywire_reference": "FW-SYD-2026-88194",
+      "last_updated": "2026-10-22 08:15 UTC"
+    },
+    "visa_assistance": {
+      "status": "CoE Issued / Student Visa Lodged",
+      "advisor_assigned": "Elena Wong",
+      "success_rate": "100%",
+      "next_step": "Submit Biometrics at Singapore VFS Visa Application Centre"
+    }
+  },
+  {
+    "id": "app-003",
+    "university_id": "univ-002",
+    "university_name": "New York University",
+    "program": "BS Business and Political Economy (Stern)",
+    "country": "United States",
+    "flag": "🇺🇸",
+    "portal": "Common App",
+    "fee_waiver_applied": false,
+    "fee_waiver_saved_usd": 0,
+    "current_stage": "Application Submitted",
+    "stage_step": 3,
+    "total_steps": 5,
+    "offer_type": "Awaiting Early Decision 1 Results (Dec 15)",
+    "uea_counselor": "School Counselor: Dr. Rachel Adams",
+    "urgent_chat_available": false,
+    "conditions": [],
+    "flywire_payment": {
+      "item": "Common App Submission Fee",
+      "amount_usd": 80,
+      "status": "Processing in Transit",
+      "currency_options": [
+        "USD"
+      ],
+      "flywire_reference": "FW-NYU-2026-11029",
+      "last_updated": "2026-10-18 19:20 UTC"
+    },
+    "visa_assistance": {
+      "status": "Pending Admission Decision",
+      "advisor_assigned": "Dr. Rachel Adams",
+      "success_rate": "Standard F-1 Protocol",
+      "next_step": "Await I-20 documentation issuance upon offer"
+    }
+  }
+]

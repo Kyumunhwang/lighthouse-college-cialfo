@@ -1,0 +1,404 @@
+{
+  "active_student_id": "2019F0502",
+  "student": {
+    "student_id": "2019F0502",
+    "name": "SUMIN CHO (조수민)",
+    "english_name": "Ella",
+    "korean_name": "조수민",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "grade": "12th Grader (H12)",
+    "cohort": "Class of 2026",
+    "school": "Leaders International School (LIS)",
+    "homeroom_teacher": "Peter Yoo",
+    "counselor": "David Nah (나경식 - College Counselor, Ext: 213)",
+    "curriculum": "AP & International College Prep",
+    "gpa_unweighted": 3.94,
+    "sat_score": 1530,
+    "ib_predicted": 40,
+    "dob": "2008.09.27",
+    "gender": "F",
+    "address": "경기도 파주시 책향기로 209, 1410동 1103호",
+    "guardians": {
+      "father": "조기웅",
+      "mother": "정미경",
+      "contact": "010-9003-9929"
+    },
+    "active_applications_count": 6,
+    "countries_targeted": [
+      "United States",
+      "United Kingdom",
+      "Australia",
+      "Canada"
+    ],
+    "direct_apply_partner_status": "Active"
+  },
+  "all_h12_seniors": [
+    {
+      "student_id": "2019F0501",
+      "passport_name": "HYUNDO KIM",
+      "korean_name": "김현도",
+      "english_name": "Hyundo",
+      "display_name": "HYUNDO KIM (김현도) - Hyundo",
+      "gender": "M",
+      "dob": "2008.09.25",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김동성",
+      "mother": "임해영",
+      "cell": "010-5515-7397",
+      "address": "경기도 고양시 덕양구 솔밭1길 45, 원흥동 642번지 301호"
+    },
+    {
+      "student_id": "2019F0502",
+      "passport_name": "SUMIN CHO",
+      "korean_name": "조수민",
+      "english_name": "Ella",
+      "display_name": "SUMIN CHO (조수민) - Ella",
+      "gender": "F",
+      "dob": "2008.09.27",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "조기웅",
+      "mother": "정미경",
+      "cell": "010-9003-9929",
+      "address": "경기도 파주시 책향기로 209, 1410동 1103호"
+    },
+    {
+      "student_id": "2021S0603",
+      "passport_name": "HANUL KIM",
+      "korean_name": "김하늘",
+      "english_name": "Rachel",
+      "display_name": "HANUL KIM (김하늘) - Rachel",
+      "gender": "F",
+      "dob": "2008.09.23",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김수민",
+      "mother": "이경민",
+      "cell": "010-9075-4581",
+      "address": "경기도 고양시 덕양구 소원로 252, 1103동 102호"
+    },
+    {
+      "student_id": "2021S0604",
+      "passport_name": "SEHYUN KIM",
+      "korean_name": "김세현",
+      "english_name": "Daniel",
+      "display_name": "SEHYUN KIM (김세현) - Daniel",
+      "gender": "M",
+      "dob": "2008.12.20",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김경선",
+      "mother": "조보배",
+      "cell": "010-6355-6278",
+      "address": "경기도 파주시 초롱꽃로 130 디에트로더퍼스트1304동 1403호"
+    },
+    {
+      "student_id": "2018S0301",
+      "passport_name": "SERIN KIM",
+      "korean_name": "김세린",
+      "english_name": "Serin",
+      "display_name": "SERIN KIM (김세린) - Serin",
+      "gender": "F",
+      "dob": "2008.05.07",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김성민",
+      "mother": "이은주",
+      "cell": "010-4034-0891",
+      "address": "경기도 파주시 청석로300 대원효성아파트 923동 403호"
+    },
+    {
+      "student_id": "2023F1305",
+      "passport_name": "YENA SON",
+      "korean_name": "손예나",
+      "english_name": "Yena",
+      "display_name": "YENA SON (손예나) - Yena",
+      "gender": "F",
+      "dob": "2008.12.20",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "손대진",
+      "mother": "박경아",
+      "cell": "010-4467-1895",
+      "address": "경기도 파주시 탄현면 오색나비길 47"
+    },
+    {
+      "student_id": "2024S1343",
+      "passport_name": "MINKI KIM",
+      "korean_name": "김민기",
+      "english_name": "Minki",
+      "display_name": "MINKI KIM (김민기) - Minki",
+      "gender": "M",
+      "dob": "2007.05.05",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김학수",
+      "mother": "이희원",
+      "cell": "010-8730-1286",
+      "address": "경기도 고양시 일산서구 고양대로 255번길 45, 킨텍스아이파크 902동 602호"
+    },
+    {
+      "student_id": "2024S1325",
+      "passport_name": "SEOYOUNG YOON",
+      "korean_name": "윤서영",
+      "english_name": "Sophia",
+      "display_name": "SEOYOUNG YOON (윤서영) - Sophia",
+      "gender": "F",
+      "dob": "2008.11.05",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "Billy Yoon",
+      "mother": "임선혜",
+      "cell": "010-8306-9016",
+      "address": "경기 고양시 일산서구 송포로 207, 가좌동 꿈에그린 708동801호"
+    },
+    {
+      "student_id": "2024S1338",
+      "passport_name": "DOHYUN LEE",
+      "korean_name": "이도현",
+      "english_name": "Ethan",
+      "display_name": "DOHYUN LEE (이도현) - Ethan",
+      "gender": "M",
+      "dob": "2008.03.10",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "이준표",
+      "mother": "전은숙",
+      "cell": "010-8203-7585",
+      "address": "경기도 김포시 김포한강2로 208 고창마을 KCC스위첸 410동 304호"
+    },
+    {
+      "student_id": "2024F1369",
+      "passport_name": "SE EUN TAK",
+      "korean_name": "탁세은",
+      "english_name": "Renee",
+      "display_name": "SE EUN TAK (탁세은) - Renee",
+      "gender": "F",
+      "dob": "2007.10.15",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "탁문수",
+      "mother": "김훈진",
+      "cell": "010-9650-7738",
+      "address": "경기도 김포시 김호한강 1로 10 초당마을 우미린 206동 1603호"
+    },
+    {
+      "student_id": "2024F1368",
+      "passport_name": "EUNSOL KIM",
+      "korean_name": "김은솔",
+      "english_name": "Joy",
+      "display_name": "EUNSOL KIM (김은솔) - Joy",
+      "gender": "F",
+      "dob": "2007.10.26",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김현진",
+      "mother": "신영아",
+      "cell": "010-5946-9946",
+      "address": "경기도 고양시 일산동구 탄중로 430 중산마을 10단지 1003동 1101호"
+    },
+    {
+      "student_id": "2025S1399",
+      "passport_name": "KAILYN SUMIN CHEON",
+      "korean_name": "천수민",
+      "english_name": "Kailyn Cheon",
+      "display_name": "KAILYN SUMIN CHEON (천수민) - Kailyn Cheon",
+      "gender": "F",
+      "dob": "2008.11.22",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "천상현",
+      "mother": "김성경",
+      "cell": "010-4188-0394",
+      "address": "파주시 회동길 301 헤르만하우스 104-105"
+    },
+    {
+      "student_id": "2025F1412",
+      "passport_name": "TAERIM KIM",
+      "korean_name": "김태림",
+      "english_name": "Terry",
+      "display_name": "TAERIM KIM (김태림) - Terry",
+      "gender": "M",
+      "dob": "2008.06.23",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김영일",
+      "mother": "조자영",
+      "cell": "010-3173-7066",
+      "address": "경기도 고양시 덕양구 동송로 23-28 306-2606"
+    },
+    {
+      "student_id": "2025F1418",
+      "passport_name": "SOPHIA M. KIM",
+      "korean_name": "김민경",
+      "english_name": "Sophia",
+      "display_name": "SOPHIA M. KIM (김민경) - Sophia",
+      "gender": "F",
+      "dob": "2007.12.13",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김종성",
+      "mother": "조희주",
+      "cell": "010-8858-7260",
+      "address": "일산동구 위시티 4로 80, 자이1단지 109동 2103호"
+    },
+    {
+      "student_id": "2024F1356",
+      "passport_name": "HYUNSEO KIM",
+      "korean_name": "김현서",
+      "english_name": "David",
+      "display_name": "HYUNSEO KIM (김현서) - David",
+      "gender": "M",
+      "dob": "2008.03.25",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "김기율",
+      "mother": "김진옥",
+      "cell": "010-9232-6456",
+      "address": "경기도 고양시 일산서구 탄현로 136, 110-1105"
+    },
+    {
+      "student_id": "2026S1444",
+      "passport_name": "YEWON HAN",
+      "korean_name": "한예원",
+      "english_name": "Olivia",
+      "display_name": "YEWON HAN (한예원) - Olivia",
+      "gender": "F",
+      "dob": "2008.01.07",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "한현진",
+      "mother": "이지은",
+      "cell": "010-6335-2656",
+      "address": "경기도 고양시 일산서구 일현로 97-11, 107동 1904호 (탄현동,두산위브더제니스)"
+    },
+    {
+      "student_id": "2025S1387",
+      "passport_name": "YEYUN LEE",
+      "korean_name": "이예윤",
+      "english_name": "Rachel",
+      "display_name": "YEYUN LEE (이예윤) - Rachel",
+      "gender": "F",
+      "dob": "2009.07.11",
+      "homeroom_teacher": "Peter Yoo",
+      "father": "이용현",
+      "mother": "김정명",
+      "cell": "010-3791-6116",
+      "address": "경기도 고양시 일산동구 위시티4로 45 (식사동, 위시티일산자이4단지아파트) 411동 1902호"
+    }
+  ],
+  "roadmap": {
+    "current_stage": 3,
+    "stage_title": "Stage 3 of 4: In High Gear (70% Overall Readiness)",
+    "cycle": "FALL 2026 CYCLE",
+    "next_critical_date": "Nov 1 (US Early Decision & UK Early Deadlines)",
+    "stages": [
+      {
+        "id": 1,
+        "name": "Profile & Foundation",
+        "description": "LIS transcript, GPA 3.94, demographics, parent info locked.",
+        "progress": 100,
+        "status": "Done"
+      },
+      {
+        "id": 2,
+        "name": "Discovery & Quest",
+        "description": "Major matches (Computing & Business), career assessments completed.",
+        "progress": 100,
+        "status": "Done"
+      },
+      {
+        "id": 3,
+        "name": "Build Lists & Apply",
+        "description": "Common App linked, LOR requested from Peter Yoo, Direct Apply in progress.",
+        "progress": 70,
+        "status": "In Progress"
+      },
+      {
+        "id": 4,
+        "name": "Offer, Flywire & Enroll",
+        "description": "Conditional offers, Flywire tuition deposit, and student visa processing.",
+        "progress": 15,
+        "status": "Upcoming"
+      }
+    ]
+  },
+  "quest_persona": {
+    "level": 4,
+    "name": "Applying Alpaca",
+    "badge": "🦙 Space Suit Alpaca",
+    "tagline": "LIS Class of 2026 Senior executing multi-country early applications.",
+    "focus_area": "Finalizing LOR Tier 2 responses for Peter Yoo & Direct Apply submissions",
+    "what_to_embrace": "Locking Section B reflections and verifying UK / US Early Decision deadlines early.",
+    "what_to_avoid": "Leaving transcript dispatch and Flywire deposit transactions to deadline night.",
+    "kudos_count": 56,
+    "progression_ladder": [
+      {
+        "level": 1,
+        "animal": "Curious Capybara",
+        "focus": "Self-Discovery & Course Selection"
+      },
+      {
+        "level": 2,
+        "animal": "Exploring Elephant",
+        "focus": "University Longlist Building"
+      },
+      {
+        "level": 3,
+        "animal": "List-Building Leopard",
+        "focus": "Scattergram & Fit Calibration"
+      },
+      {
+        "level": 4,
+        "animal": "Applying Alpaca",
+        "focus": "Global Applications & Direct Apply"
+      }
+    ]
+  },
+  "classmate_kudos": [
+    {
+      "student": "HYUNDO KIM (김현도)",
+      "persona": "Applying Alpaca",
+      "action": "Submitted Direct Apply to Imperial College",
+      "time": "15m ago"
+    },
+    {
+      "student": "SEHYUN KIM (김세현)",
+      "persona": "Applying Alpaca",
+      "action": "Locked 6 Shortlisted US universities",
+      "time": "38m ago"
+    },
+    {
+      "student": "SEOYOUNG YOON (윤서영)",
+      "persona": "List-Building Leopard",
+      "action": "Completed Common App Personal Essay Draft v3",
+      "time": "1h ago"
+    },
+    {
+      "student": "DOHYUN LEE (이도현)",
+      "persona": "Applying Alpaca",
+      "action": "Requested LOR from Peter Yoo",
+      "time": "2h ago"
+    }
+  ],
+  "urgent_tasks": [
+    {
+      "id": "task-lis-1",
+      "title": "Submit Final Draft for Common App Personal Statement",
+      "due": "Oct 25",
+      "priority": "Urgent",
+      "status": "In Progress",
+      "type": "Essay Task"
+    },
+    {
+      "id": "task-lis-2",
+      "title": "Confirm Section B Recommender Form for Peter Yoo",
+      "due": "Oct 28",
+      "priority": "High",
+      "status": "Action Required",
+      "type": "LOR Task"
+    },
+    {
+      "id": "task-lis-3",
+      "title": "Upload Valid Passport Copy to Personal Hubs Drive",
+      "due": "Nov 02",
+      "priority": "Medium",
+      "status": "Not Started",
+      "type": "Document Task"
+    }
+  ],
+  "counselor_notes": {
+    "date": "Oct 22, 2026",
+    "counselor": "David Nah (College Counselor) & Peter Yoo (H12 Homeroom)",
+    "summary": "Counseling strategy session conducted at LIS Counseling Office (Ext: 213). Reviewed student's GPA of 3.94 and SAT 1530. Recommended submitting Direct Apply applications to Imperial College London and University of Sydney to secure $250 fee waivers, with Early Decision submission to NYU Stern via Common App. Both parents (조기웅 & 정미경) notified via Cialfo Family Portal.",
+    "action_items": [
+      "Complete Tier 2 course reflection for David Nah (AP Math/Physics) and Peter Yoo (Humanities)",
+      "Review full terms for Imperial College London Conditional Offer with Cialfo Guide"
+    ]
+  }
+}

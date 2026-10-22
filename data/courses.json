@@ -1,0 +1,67 @@
+[
+  {
+    "id": "crs-001",
+    "title": "Dual Degree in Computer Science & Music Technology (STEAM)",
+    "university": "Imperial College London x Royal College of Music",
+    "country": "United Kingdom",
+    "category": "STEAM",
+    "duration": "4 Years (BSc / BMus)",
+    "tuition_annual_gbp": 38000,
+    "pathway": "Direct Entry",
+    "scholarship": "Cialfo Innovation Grant (£5,000 / yr)",
+    "requirements": "IB 38+ (Math HL 6, Physics or Music HL 6)",
+    "description": "Combines advanced algorithmic sound synthesis, machine learning for audio, and classical acoustics."
+  },
+  {
+    "id": "crs-002",
+    "title": "BSc Commercial Aviation & Flight Operations (Pilot Training)",
+    "university": "University of New South Wales (UNSW)",
+    "country": "Australia",
+    "category": "Aviation",
+    "duration": "3 Years + Flight Hours",
+    "tuition_annual_aud": 51000,
+    "pathway": "Direct Apply Pathway",
+    "scholarship": "Aviation Merit Scholarship (AUD $10,000)",
+    "requirements": "IB 32+ or Equivalent High School Diploma + Class 1 Medical",
+    "description": "Integrates Airline Transport Pilot Licence (ATPL) theory with flight training, aerodynamics, and aviation law."
+  },
+  {
+    "id": "crs-003",
+    "title": "BA Football Business & Sports Marketing",
+    "university": "UCFB Wembley Stadium / Manchester",
+    "country": "United Kingdom",
+    "category": "Sports",
+    "duration": "3 Years",
+    "tuition_annual_gbp": 16500,
+    "pathway": "Direct Apply Verified",
+    "scholarship": "Global Sports Ambassador Award (£2,500)",
+    "requirements": "IB 28+ / High School GPA 2.8+ / IELTS 6.0",
+    "description": "Based directly inside iconic football stadiums (Wembley & Etihad) with hands-on club management internships."
+  },
+  {
+    "id": "crs-004",
+    "title": "BSc Game Design & Interactive Media Development",
+    "university": "New York University (Tisch School of the Arts)",
+    "country": "United States",
+    "category": "Design & Tech",
+    "duration": "4 Years",
+    "tuition_annual_usd": 61500,
+    "pathway": "Common App Portfolio Track",
+    "scholarship": "Tisch Dean's Fellowship ($15,000 / yr)",
+    "requirements": "Creative Portfolio + GPA 3.8+ + SAT 1480+",
+    "description": "Explores game mechanics, 3D world building, interactive storytelling, and virtual reality engines."
+  },
+  {
+    "id": "crs-005",
+    "title": "BEng Robotics & Autonomous Systems",
+    "university": "University of Sydney",
+    "country": "Australia",
+    "category": "Engineering",
+    "duration": "4 Years (Honours)",
+    "tuition_annual_aud": 54000,
+    "pathway": "Direct Apply Fast-Track",
+    "scholarship": "Vice-Chancellor's Global Mobility Grant (AUD $20,000)",
+    "requirements": "IB 35+ (Math AA HL 5+ or SL 6+)",
+    "description": "Focuses on computer vision, sensor fusion, autonomous mobile robots, and cyber-physical systems."
+  }
+]

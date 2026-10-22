@@ -1,0 +1,332 @@
+[
+  {
+    "no": 1,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, MINISTRY",
+    "korean_name": "김바울",
+    "english_name": "PAUL KIM",
+    "display_name": "PAUL KIM (김바울)",
+    "role": "Headmaster / Principal",
+    "extension": "230"
+  },
+  {
+    "no": 2,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE",
+    "korean_name": "박영희",
+    "english_name": "ESTHER KIM",
+    "display_name": "ESTHER KIM (박영희)",
+    "role": "Chief Business Officer",
+    "extension": "101"
+  },
+  {
+    "no": 3,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE",
+    "korean_name": "김지이",
+    "english_name": "GRACE KIM",
+    "display_name": "GRACE KIM (김지이)",
+    "role": "Deputy Principal",
+    "extension": ""
+  },
+  {
+    "no": 4,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING, MINISTRY",
+    "korean_name": "유찬호",
+    "english_name": "PETER YOO",
+    "display_name": "PETER YOO (유찬호)",
+    "role": "Chaplain / H12Homeroom / Bible",
+    "extension": ""
+  },
+  {
+    "no": 5,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING",
+    "korean_name": "황규문",
+    "english_name": "KYU MUN HWANG",
+    "display_name": "KYU MUN HWANG (황규문)",
+    "role": "Vice Principal (Secondary) / Computer Science",
+    "extension": "214"
+  },
+  {
+    "no": 6,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, COMMUTING",
+    "korean_name": "이환희",
+    "english_name": "DANIEL LEE",
+    "display_name": "DANIEL LEE (이환희)",
+    "role": "Business Director",
+    "extension": "102"
+  },
+  {
+    "no": 7,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE",
+    "korean_name": "하지현",
+    "english_name": "SALLY HA",
+    "display_name": "SALLY HA (하지현)",
+    "role": "Vice Principal (Elementary)",
+    "extension": "206"
+  },
+  {
+    "no": 8,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING",
+    "korean_name": "이재원",
+    "english_name": "JAE LEE",
+    "display_name": "JAE LEE (이재원)",
+    "role": "M8 Homeroom / History / Director of Student Services (Secondary) / Registrar",
+    "extension": "221"
+  },
+  {
+    "no": 9,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING",
+    "korean_name": "김혜정",
+    "english_name": "HYE JUNG KIM",
+    "display_name": "HYE JUNG KIM (김혜정)",
+    "role": "Librarian / Korean",
+    "extension": "110"
+  },
+  {
+    "no": 10,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING, PA/CA/ML, COMMUTING",
+    "korean_name": "평상규",
+    "english_name": "DANNY PYUNG",
+    "display_name": "DANNY PYUNG (평상규)",
+    "role": "Math / Physical Education",
+    "extension": "205"
+  },
+  {
+    "no": 11,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE",
+    "korean_name": "김선경",
+    "english_name": "JOY KIM",
+    "display_name": "JOY KIM (김선경)",
+    "role": "Admissions Director / Director of Student Service (Elementary)",
+    "extension": "112"
+  },
+  {
+    "no": 12,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING",
+    "korean_name": "리킹",
+    "english_name": "LEIGH KING",
+    "display_name": "LEIGH KING (리킹)",
+    "role": "Director of Curriculum & Instruction",
+    "extension": "115"
+  },
+  {
+    "no": 13,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE",
+    "korean_name": "이주형",
+    "english_name": "JIMMY LEE",
+    "display_name": "JIMMY LEE (이주형)",
+    "role": "Admin Staff, Extracurriclular Coordinator",
+    "extension": "113"
+  },
+  {
+    "no": 14,
+    "employment": "Full-Time",
+    "division": "ADMININSTRATIVE, TEACHING",
+    "korean_name": "나경식",
+    "english_name": "DAVID NAH",
+    "display_name": "DAVID NAH (나경식)",
+    "role": "H11 Homeroom / College Counselor",
+    "extension": "213"
+  },
+  {
+    "no": 16,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "진해리(휴직중)",
+    "english_name": "HAELEE JIN",
+    "display_name": "HAELEE JIN (진해리(휴직중))",
+    "role": "",
+    "extension": ""
+  },
+  {
+    "no": 17,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "임그린",
+    "english_name": "GREEN LIM",
+    "display_name": "GREEN LIM (임그린)",
+    "role": "E1 Homeroom",
+    "extension": "103"
+  },
+  {
+    "no": 18,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "유윤정",
+    "english_name": "YUN JEONG YU",
+    "display_name": "YUN JEONG YU (유윤정)",
+    "role": "E3 Homeroom",
+    "extension": "105"
+  },
+  {
+    "no": 19,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "박예진",
+    "english_name": "JINNY PARK",
+    "display_name": "JINNY PARK (박예진)",
+    "role": "E4 Homeroom",
+    "extension": "106"
+  },
+  {
+    "no": 20,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "에크남 바자즈",
+    "english_name": "EKNAM BAJAJ",
+    "display_name": "EKNAM BAJAJ (에크남 바자즈)",
+    "role": "E2 Homeroom / Elementary Lead Teacher",
+    "extension": "104"
+  },
+  {
+    "no": 21,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "박진희",
+    "english_name": "CHRISTINE PARK",
+    "display_name": "CHRISTINE PARK (박진희)",
+    "role": "H10 Homeroom / Korean / Physical Education",
+    "extension": "202"
+  },
+  {
+    "no": 22,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "이영은",
+    "english_name": "MICHELLE LEE",
+    "display_name": "MICHELLE LEE (이영은)",
+    "role": "H9 Homeroom / MS English B",
+    "extension": "203"
+  },
+  {
+    "no": 23,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "데니얼 김",
+    "english_name": "DANIEL KIM",
+    "display_name": "DANIEL KIM (데니얼 김)",
+    "role": "E5 Homeroom / English",
+    "extension": "107"
+  },
+  {
+    "no": 24,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "강소라",
+    "english_name": "SORA KANG",
+    "display_name": "SORA KANG (강소라)",
+    "role": "M7 Homeroom / Science",
+    "extension": "207"
+  },
+  {
+    "no": 25,
+    "employment": "Full-Time",
+    "division": "FACILITY",
+    "korean_name": "정봉자",
+    "english_name": "",
+    "display_name": "정봉자",
+    "role": "Custodial Services",
+    "extension": ""
+  },
+  {
+    "no": 26,
+    "employment": "Full-Time",
+    "division": "FACILITY",
+    "korean_name": "김용오",
+    "english_name": "",
+    "display_name": "김용오",
+    "role": "Facilities",
+    "extension": ""
+  },
+  {
+    "no": 27,
+    "employment": "Full-Time",
+    "division": "TEACHING",
+    "korean_name": "류미연",
+    "english_name": "MONICA YU",
+    "display_name": "MONICA YU (류미연)",
+    "role": "Math, English(A)",
+    "extension": ""
+  },
+  {
+    "no": 28,
+    "employment": "Part-Time",
+    "division": "TEACHING",
+    "korean_name": "문성환(한국사, 사회)",
+    "english_name": "",
+    "display_name": "문성환(한국사, 사회)",
+    "role": "Korean History",
+    "extension": ""
+  },
+  {
+    "no": 29,
+    "employment": "Part-Time",
+    "division": "TEACHING",
+    "korean_name": "곽혜미(수학)",
+    "english_name": "HAEMI KWAK",
+    "display_name": "HAEMI KWAK (곽혜미(수학))",
+    "role": "Math",
+    "extension": ""
+  },
+  {
+    "no": 30,
+    "employment": "Part-Time",
+    "division": "TEACHING, PA/CA/ML",
+    "korean_name": "김성희(미술)",
+    "english_name": "SUNGHEE KIM",
+    "display_name": "SUNGHEE KIM (김성희(미술))",
+    "role": "Art",
+    "extension": ""
+  },
+  {
+    "no": 31,
+    "employment": "Part-Time",
+    "division": "TEACHING",
+    "korean_name": "김보미(음악)",
+    "english_name": "",
+    "display_name": "김보미(음악)",
+    "role": "Music",
+    "extension": ""
+  },
+  {
+    "no": 32,
+    "employment": "Part-Time",
+    "division": "TEACHING",
+    "korean_name": "황지선(중국어)",
+    "english_name": "JISUN HWANG",
+    "display_name": "JISUN HWANG (황지선(중국어))",
+    "role": "Chinese",
+    "extension": ""
+  },
+  {
+    "no": 33,
+    "employment": "Part-Time",
+    "division": "ADMININSTRATIVE",
+    "korean_name": "이은주",
+    "english_name": "PAULINE LEE",
+    "display_name": "PAULINE LEE (이은주)",
+    "role": "Admin Staff",
+    "extension": ""
+  },
+  {
+    "no": 34,
+    "employment": "Part-Time",
+    "division": "TEACHING, PA/CA/ML",
+    "korean_name": "김남균",
+    "english_name": "STEVEN KIM",
+    "display_name": "STEVEN KIM (김남균)",
+    "role": "Youth Pot Director / Visual Arts Major Program",
+    "extension": ""
+  }
+]

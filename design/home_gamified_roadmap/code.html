@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-container": "#cad3ff",
+          "surface": "#faf8ff",
+          "on-surface-variant": "#434655",
+          "surface-container": "#eaedff",
+          "on-primary": "#ffffff",
+          "primary": "#0037b0",
+          "surface-container-low": "#f2f3ff",
+          "background": "#faf8ff",
+          "primary-container": "#1d4ed8",
+          "outline-variant": "#c4c5d7",
+          "inverse-surface": "#283044",
+          "on-secondary-container": "#663500",
+          "on-tertiary": "#ffffff",
+          "secondary": "#904d00",
+          "on-tertiary-fixed-variant": "#005137",
+          "on-tertiary-container": "#76eab6",
+          "surface-variant": "#dae2fd",
+          "surface-container-highest": "#dae2fd",
+          "on-secondary-fixed-variant": "#6e3900",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed-dim": "#b7c4ff",
+          "secondary-container": "#fe932c",
+          "outline": "#747686",
+          "primary-fixed": "#dce1ff",
+          "inverse-on-surface": "#eef0ff",
+          "surface-bright": "#faf8ff",
+          "tertiary-container": "#006948",
+          "surface-tint": "#2151da",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed": "#002114",
+          "surface-dim": "#d2d9f4",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#0039b5",
+          "tertiary": "#004f35",
+          "on-secondary": "#ffffff",
+          "on-background": "#131b2e",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#2f1500",
+          "tertiary-fixed-dim": "#68dba9",
+          "on-surface": "#131b2e",
+          "on-primary-fixed": "#001551",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#85f8c4",
+          "error-container": "#ffdad6",
+          "inverse-primary": "#b7c4ff",
+          "secondary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#ffb77d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "gutter-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="Cialfo AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3vf2gI9z9kN05KW0a6nvsE9CnMssLyZ2mf3KaIIo6CWnW7q3y4eIIMQ4R9XAt9AFgsUA6b7eZWAWML1p_FFo-c0GVWxjqLyfwA-BqTFYf4Y3urYcSKVgGRZAJ3x-io5zKZ8JvO8-e6tPNIbkUMdM_0hhvPM2vX2DuClK3PIA9fllNV2jD8adWnM0EZYb3bbSlEGVfWT7gWuI0o6kFq1VPn_YXjjG69tZDd1b7o6rXPC5y3m_EhVlwrsE"/><span class="font-title-md text-title-md text-primary tracking-tight font-bold hidden sm:inline-block">Cialfo.ai</span><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-full font-semibold uppercase tracking-wider hidden md:inline-block">Global CCR</span></div><div class="flex-1 max-w-xl mx-space-md hidden lg:block"><div class="relative flex items-center w-full h-11 bg-surface-container-lowest rounded-full px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-outline mr-space-xs text-[20px]">search</span><input class="w-full bg-transparent border-0 focus:outline-none font-body-sm text-body-sm text-on-surface placeholder-outline" placeholder="Search universities, courses (e.g. STEAM, Football), scholarships, articles..." type="text"/><span class="flex items-center font-label-sm text-label-sm text-outline bg-surface-container-low px-space-xs py-0.5 rounded font-medium flex-shrink-0">⌘K</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant cursor-pointer hover:bg-surface-container hover:text-on-surface transition-colors"><span>Student (12th Grader)</span><span class="material-symbols-outlined text-[18px]">arrow_drop_down</span></div><button class="relative flex items-center justify-center p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full font-bold">3</span></button><button class="flex items-center gap-space-xs p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat_bubble</span></button><button class="flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-md py-1.5 rounded-full font-label-md text-label-md font-semibold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors shadow-sm" type="button"><span>🦁</span><span class="hidden sm:inline-block">Ask Saige</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQaDufI0EFe_Co8gJC-e_Hhi8MVvLmUgYVfLp_oSNFFbXUC5bAw18Gr7d5b7s1J8dxcNsNxtjKyCnXg-a0L9xcocfo06B-pu2BB1y4N9xd8OzEPCcph-fBfple7bNJb3no_rWvbz8SO_rteFjqcCcM_NlSUBdwBLgEinT73_C8PVDKxLsoUU5HobHgosdRb2Hi2lM-FgCUXOahwBaI3bctu6_FRSZR28yLmYnRNZkvyGdNrmViLN_uw"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Sarah Lin</span><span class="font-label-sm text-label-sm text-outline leading-tight">Class of 2026</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="home-roadmap" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span>Home &amp; Roadmap</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="universities-courses" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span>Universities &amp; Courses</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="bookmarks-compare" href="#"><span class="material-symbols-outlined text-[22px]">bookmarks</span><span>Bookmarks &amp; Compare</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="applications-direct-apply" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span>Applications &amp; Direct Apply</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="structured-recommendations" href="#"><span class="material-symbols-outlined text-[22px]">edit_document</span><span>Structured Recommendations</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discovery-events" href="#"><span class="material-symbols-outlined text-[22px]">public</span><span>Discovery &amp; Events</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="careers-hubs" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span>Careers &amp; Hubs</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1"><div class="flex items-center gap-1.5 font-semibold text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span><span>Singapore American School</span></div><div class="text-outline">Counselor: Dr. Rachel Adams</div><div class="flex items-center gap-1 text-tertiary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span>Direct Apply Partner: Active</span></div></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface w-full min-h-screen px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Top Welcome & Roadmap Stage Banner -->
+<section class="w-full mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- User Greeting & Global Term Pill -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[28px]">rocket_launch</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-md text-headline-md text-on-surface">Hello, Sarah!</h1>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold tracking-wide">FALL 2026 CYCLE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Class of 2026 · Singapore American School · 8 Target Applications Active</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-lg self-start md:self-auto">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface">Next Critical Date: <strong class="text-error font-bold">Oct 15 (UCAS Oxbridge &amp; Direct Apply Early)</strong></span>
+</div>
+</div>
+<!-- Roadmap Flow Horizontal Stepper -->
+<div class="w-full pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline font-semibold">University Preparation Journey</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Stage 3 of 4: In High Gear (65% Overall Readiness)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm">
+<!-- Stage 1: Done -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">task_alt</span> Stage 1
+              </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold">100%</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Profile &amp; Foundation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">IB Diploma subjects &amp; high school transcripts uploaded.</p>
+</div>
+<!-- Stage 2: Done -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">task_alt</span> Stage 2
+              </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold">100%</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Discovery &amp; Quest</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Majors calibrated, career matches &amp; psychometrics locked.</p>
+</div>
+<!-- Stage 3: Active Focus -->
+<div class="p-space-sm rounded-lg bg-primary-container text-on-primary flex flex-col gap-1 shadow-md relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 rounded-full bg-white/10 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] animate-pulse">radio_button_checked</span> Active Stage 3
+              </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-white text-primary font-bold">65% Active</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-white">Build Lists &amp; Apply</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">8 institutions curated. LOR forms &amp; Common App in draft.</p>
+<div class="w-full bg-black/20 h-1.5 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+<!-- Stage 4: Upcoming -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 opacity-80 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span> Stage 4
+              </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-outline font-medium">Next</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Offers, Flywire &amp; Enroll</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conditional tracking, tuition payments &amp; CAS/I-20 visas.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Stats & Opportunities Ribbon -->
+<section class="w-full mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Metric 1: Applying Universities across 3 countries -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Applying Universities</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-semibold">PRD 1.2 Multi-Destination</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl font-bold text-primary">8</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-medium">Universities Selected</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="inline-flex items-center px-2 py-1 rounded bg-surface-container-low font-label-sm text-label-sm font-semibold text-on-surface">🇺🇸 US (4)</span>
+<span class="inline-flex items-center px-2 py-1 rounded bg-surface-container-low font-label-sm text-label-sm font-semibold text-on-surface">🇬🇧 UK (2)</span>
+<span class="inline-flex items-center px-2 py-1 rounded bg-surface-container-low font-label-sm text-label-sm font-semibold text-on-surface">🇸🇬 SG (2)</span>
+</div>
+</div>
+<!-- Metric 2: Direct Apply Fee Savings & Scholarship Perks -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-tertiary">Direct Apply Perks</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">bolt</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl font-bold text-tertiary">$680</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Application Fees Waived</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-tertiary-fixed-variant bg-tertiary-fixed/30 px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-tertiary">workspace_premium</span>
+<span class="font-label-sm text-label-sm font-semibold">Cialfo Global Access Scholarship: Nominated</span>
+</div>
+</div>
+<!-- Metric 3: Conditional Offer Received -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Early Decision Milestone</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">1 Milestone Ready</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">University of Edinburgh</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">Conditional Offer Received (BSc AI &amp; CS)</p>
+</div>
+<button class="flex items-center justify-between w-full px-space-sm py-1.5 bg-surface-container-low rounded-lg text-primary hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors" type="button">
+<span>Review Offer Conditions &amp; Tasks</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Bento Grid: Gamified Quest & Pinned Tasks + Saige Prompter -->
+<section class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- LEFT 7 COLS: Gamified University Quest & Persona Engine -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Animal Persona Card (PRD video 8: Level 4 Applying Alpaca) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<!-- Energetic Persona Avatar Badge -->
+<div class="relative w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center shadow-inner overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Stylized 3D mascot illustration of an enthusiastic alpaca wearing a sleek futuristic astronaut spacesuit with blueprint papers sticking out of its mission belt, cheerful expression, colorful edtech corporate style, soft warm ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOp4tO1BRZw4-yGVtPSzecSKuW-SR7xoTMVxu5sV0OfETjOmmujicU85uCKzKG30iPKQmh1lEnmwlPgPzXOuQLqvnhKG3espbWb7XhZDw-O5OgtBc0KLOLGPV7Mh2uc6P4l6s-56f7ySC58c44DRrUm4McLArqn6747Bqyd7Nk2_QzaStym2jATwVZtaa03op12-21UoIMKpxLLPZl9pk6uasqyfSoHMWibnKnV5Sux-GEAr6AOF2FVQ"/>
+<span class="absolute bottom-0 right-0 bg-secondary-container text-on-secondary-container text-[10px] font-bold px-1.5 py-0.5 rounded-tl-lg font-label-sm">LV.4</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Applying Alpaca</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Stage Tier: High Flight</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quest Persona: Analytical Trailblazer · 2,450 XP (Next Level at 3,000 XP)</p>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">military_tech</span>
+<span>View Quest Skill Tree</span>
+</button>
+</div>
+<!-- Actionable Focus Matrix (PRD Video 8 Guidance) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+<!-- Focus Area -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">target</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Primary Focus</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Finalize UCAS Personal Statement &amp; Common App supplements.</p>
+</div>
+<!-- What to Embrace -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">What to Embrace</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Schedule a 30m mock interview with Counselor Dr. Rachel Adams.</p>
+</div>
+<!-- What to Avoid -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">What to Avoid</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Overlooking UK Oxbridge early deadline (Oct 15, 18:00 BST sharp).</p>
+</div>
+</div>
+<!-- Classmate Kudos Social Motivation Ticker -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>Class of 2026 Peer Momentum</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">Live school activity</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Kudos Item 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed text-xs">
+                  JK
+                </div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Jason Kim</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">just reached <strong>List-Building Leopard (Lv.3)</strong>!</span>
+</div>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-error transition-colors font-label-sm text-label-sm font-semibold shadow-xs" onclick="this.classList.toggle('bg-error-container'); this.classList.toggle('text-error');" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+<span>Send Kudos (14)</span>
+</button>
+</div>
+<!-- Kudos Item 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed text-xs">
+                  AP
+                </div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Ananya Patel</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">submitted 1st Direct Apply application to <strong>King's College London</strong></span>
+</div>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-error transition-colors font-label-sm text-label-sm font-semibold shadow-xs" onclick="this.classList.toggle('bg-error-container'); this.classList.toggle('text-error');" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+<span>Send Kudos (29)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Discovery & University Shortlist Preview Bento -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">bookmarks</span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Application Tracker Snapshot</h3>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-0.5" href="#">
+<span>Manage All 8 Universities</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Uni Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold">Direct Apply Partner</span>
+<span class="font-label-sm text-label-sm text-outline">UK · Russell Group</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Imperial College London</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">BSc Computing (AI &amp; Machine Learning)</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Transcripts Verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Oct 15 Deadline</span>
+</div>
+</div>
+<!-- Uni Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">Common App</span>
+<span class="font-label-sm text-label-sm text-outline">USA · Tier 1</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Carnegie Mellon University</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">School of Computer Science (Early Decision)</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">pending</span>
+<span>2/3 Recommenders Signed</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Nov 1 ED Deadline</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT 5 COLS: Pinned Tasks & Micro-Assessment & Saige Assistant -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Pinned Urgent Tasks (PP-07 Solution) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">push_pin</span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Pinned High-Priority Tasks</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-bold">2 Due This Week</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Priority Card 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2 relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">assignment_late</span>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface leading-snug">D-5: Submit Common App Personal Essay Draft v2</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Requested by Counselor: Dr. Rachel Adams</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex-shrink-0">In Progress</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Target: Oct 10 · 23:59 SGT</span>
+<button class="px-space-md py-1 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-xs" type="button">
+                Upload Draft v2
+              </button>
+</div>
+</div>
+<!-- Priority Card 2: LOR Form -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">edit_document</span>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface leading-snug">Physics Teacher LOR Questionnaire</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mr. Henderson needs lab project highlights</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-bold flex-shrink-0">3/5 Done</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Due in 8 days</span>
+<button class="px-space-md py-1 rounded bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" type="button">
+                Continue Form
+              </button>
+</div>
+</div>
+</div>
+<!-- Micro-Assessment Card (PP-07 Flow) -->
+<div class="mt-space-xs p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span> Discovery Assessment
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-white text-on-surface font-semibold">5 mins remaining</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Multiple Intelligences &amp; Work Strengths (Part 3 of 4)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Helps sharpen the Saige AI match score for your Singapore &amp; UK STEM course recommendations.</p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="flex-1 bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 75%;"></div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors shadow-sm flex items-center gap-1 flex-shrink-0" type="button">
+<span>Resume (Q16-Q20)</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Saige AI Contextual Prompter Widget (PRD Section 3.1.2) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container flex items-center justify-center text-[26px] shadow-sm flex-shrink-0">
+            🦁
+          </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-on-surface">Saige AI Counselor</span>
+<span class="font-label-sm text-label-sm px-2 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">Smart Match Engine</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Just now</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+              “Sarah, since you are applying to <strong>Imperial College London</strong> &amp; <strong>NUS Singapore</strong>, want me to cross-reference your predicted IB HL Math &amp; Physics with their minimum entry thresholds?”
+            </p>
+</div>
+</div>
+<!-- Saige Dynamic Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs pl-0 sm:pl-14">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all shadow-xs flex items-center gap-1.5" onclick="alert('Checking IB HL Math Analysis &amp; Approaches HL (7) and Physics HL (7) against Imperial and NUS requirements... 100% Meets Entry Cutoffs!');" type="button">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+<span>Yes, verify prerequisites</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+<span>Check my tariff points</span>
+</button>
+<button class="px-space-sm py-2 rounded-lg text-outline hover:text-on-surface text-label-md font-label-md transition-colors" type="button">
+            Dismiss
+          </button>
+</div>
+<div class="mt-space-xs pl-0 sm:pl-14 pt-space-xs flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Trained on 3,000+ school acceptance historical data points</span>
+<span class="flex items-center gap-1 text-tertiary font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Direct Apply sync active</span>
+</div>
+</div>
+<!-- Quick Guidance / Counselor Hotline Mini Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Close up professional portrait of Dr. Rachel Adams, high school college counselor with glasses, friendly smiling expression, soft educational campus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw_mCOugOn9KIl5C9YLBm4qbcuaSxJGqwAxxPYZKaziI6wGUZRJFR7hsU7FS6ruEEnKXdZ7_d8V3acDVWzXa7hzVv6LfdqHD_LfnnZRcKvl3j8nAxwn8VLCA26xyMyLWjOPRMc5541OchsHrUmGcyj_wuI05HHSTTAufGx2nWWgsVP7dZFIZuRwzPJs6sCaJBJM9J64KwliftVTa_XV9AZQSUzciTYtKnZCjJhkC1bJ43kMieb6SVQbg"/>
+<div>
+<h5 class="font-label-lg text-label-lg font-bold text-on-surface">Dr. Rachel Adams</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Next 1:1 Counseling Slot: Oct 12, 14:00</p>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors shadow-xs" type="button">
+          Message
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interaction for social kudos counters
+  document.querySelectorAll('button[onclick*="Kudos"]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  });
+</script></main></div></body></html>

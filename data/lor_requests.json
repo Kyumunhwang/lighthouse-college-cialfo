@@ -1,0 +1,281 @@
+{
+  "cap_policy": {
+    "max_allowed": 2,
+    "requested_count": 2,
+    "policy_note": "Leaders International School (LIS) limits formal recommendation requests to 2 secondary faculty members (Principal: Paul Kim, College Counselor: David Nah, Ext: 213).",
+    "status": "2 / 2 Recommenders Requested (Cap Reached)"
+  },
+  "tier_1_common_reflections": {
+    "three_adjectives": "Resilient, Analytical, Compassionate",
+    "adjectives_explanation": "As an LIS senior, I approach complex technological challenges with quantitative rigor while maintaining genuine empathy for my school community in Ilsan and Paju.",
+    "extracurricular_highlights": "LIS Student Council Secretary, Leader of Coding Club, Volunteer tutoring middle school students.",
+    "background_challenges": "Balancing rigorous secondary coursework with family responsibilities and active mentorship of younger LIS peers.",
+    "auto_sync_enabled": true,
+    "last_saved": "2026-10-22 22:34 KST"
+  },
+  "recommenders": [
+    {
+      "id": "rec-fac-14",
+      "teacher_name": "David Nah (나경식)",
+      "korean_name": "나경식",
+      "english_name": "David Nah",
+      "subject": "College Counseling & Advanced Mathematics",
+      "department": "College Counseling & Mathematics",
+      "extension": "213",
+      "status": "In Progress (Teacher Reviewing)",
+      "requested_date": "2026-09-30",
+      "deadline": "2026-10-28",
+      "tier_2_course_reflections": {
+        "memorable_project": "Design and telemetry analysis of an autonomous sensor-driven rover for robotics laboratory experiments.",
+        "intellectual_growth": "Mastering advanced differential calculations and mathematical modeling to predict physical system behaviors.",
+        "link_to_target_major": "Directly foundational for undergraduate Computer Science, Artificial Intelligence, and Quantitative Economics."
+      },
+      "teacher_submission": {
+        "has_submitted": false,
+        "input_language": "Korean",
+        "draft_status": "Draft v2 in progress"
+      }
+    },
+    {
+      "id": "rec-fac-5",
+      "teacher_name": "Kyu Mun Hwang (황규문)",
+      "korean_name": "황규문",
+      "english_name": "Kyu Mun Hwang",
+      "subject": "Computer Science & AP Computer Science Principles",
+      "department": "Secondary Administration & Technology",
+      "extension": "214",
+      "status": "Ready for Submission",
+      "requested_date": "2026-10-15",
+      "deadline": "2026-11-01",
+      "tier_2_course_reflections": {
+        "memorable_project": "Full-stack web application development and algorithmic graph traversal optimization in Computer Science lab.",
+        "intellectual_growth": "Demonstrating exceptional architectural clarity in software design and recursive data structures.",
+        "link_to_target_major": "Crucial endorsement for BSc Computing at Imperial College London and NYU Courant Institute."
+      },
+      "teacher_submission": {
+        "has_submitted": false,
+        "input_language": "English",
+        "draft_status": "Ready for counselor review"
+      }
+    },
+    {
+      "id": "rec-fac-4",
+      "teacher_name": "Peter Yoo (유찬호)",
+      "korean_name": "유찬호",
+      "english_name": "Peter Yoo",
+      "subject": "Chaplain / H12 Homeroom / Bible & Ethics",
+      "department": "Ministry & Senior Homeroom",
+      "extension": "",
+      "status": "Drafting Request",
+      "requested_date": "2026-10-20",
+      "deadline": "2026-11-10",
+      "tier_2_course_reflections": {
+        "memorable_project": "Comparative essay examining post-industrial ethical dilemmas and compassionate leadership in global society.",
+        "intellectual_growth": "Demonstrating servant leadership and moral integrity during H12 student council governance.",
+        "link_to_target_major": "Highlights character integrity, emotional intelligence, and global citizenship."
+      },
+      "teacher_submission": {
+        "has_submitted": false,
+        "input_language": "Korean",
+        "draft_status": "Queued"
+      }
+    }
+  ],
+  "available_faculty_recommenders": [
+    {
+      "id": "fac-1",
+      "name": "PAUL KIM (김바울)",
+      "role": "Headmaster / Principal",
+      "ext": "230"
+    },
+    {
+      "id": "fac-2",
+      "name": "ESTHER KIM (박영희)",
+      "role": "Chief Business Officer",
+      "ext": "101"
+    },
+    {
+      "id": "fac-3",
+      "name": "GRACE KIM (김지이)",
+      "role": "Deputy Principal",
+      "ext": ""
+    },
+    {
+      "id": "fac-4",
+      "name": "PETER YOO (유찬호)",
+      "role": "Chaplain / H12Homeroom / Bible",
+      "ext": ""
+    },
+    {
+      "id": "fac-5",
+      "name": "KYU MUN HWANG (황규문)",
+      "role": "Vice Principal (Secondary) / Computer Science",
+      "ext": "214"
+    },
+    {
+      "id": "fac-6",
+      "name": "DANIEL LEE (이환희)",
+      "role": "Business Director",
+      "ext": "102"
+    },
+    {
+      "id": "fac-7",
+      "name": "SALLY HA (하지현)",
+      "role": "Vice Principal (Elementary)",
+      "ext": "206"
+    },
+    {
+      "id": "fac-8",
+      "name": "JAE LEE (이재원)",
+      "role": "M8 Homeroom / History / Director of Student Services (Secondary) / Registrar",
+      "ext": "221"
+    },
+    {
+      "id": "fac-9",
+      "name": "HYE JUNG KIM (김혜정)",
+      "role": "Librarian / Korean",
+      "ext": "110"
+    },
+    {
+      "id": "fac-10",
+      "name": "DANNY PYUNG (평상규)",
+      "role": "Math / Physical Education",
+      "ext": "205"
+    },
+    {
+      "id": "fac-11",
+      "name": "JOY KIM (김선경)",
+      "role": "Admissions Director / Director of Student Service (Elementary)",
+      "ext": "112"
+    },
+    {
+      "id": "fac-12",
+      "name": "LEIGH KING (리킹)",
+      "role": "Director of Curriculum & Instruction",
+      "ext": "115"
+    },
+    {
+      "id": "fac-13",
+      "name": "JIMMY LEE (이주형)",
+      "role": "Admin Staff, Extracurriclular Coordinator",
+      "ext": "113"
+    },
+    {
+      "id": "fac-14",
+      "name": "DAVID NAH (나경식)",
+      "role": "H11 Homeroom / College Counselor",
+      "ext": "213"
+    },
+    {
+      "id": "fac-16",
+      "name": "HAELEE JIN (진해리(휴직중))",
+      "role": "",
+      "ext": ""
+    },
+    {
+      "id": "fac-17",
+      "name": "GREEN LIM (임그린)",
+      "role": "E1 Homeroom",
+      "ext": "103"
+    },
+    {
+      "id": "fac-18",
+      "name": "YUN JEONG YU (유윤정)",
+      "role": "E3 Homeroom",
+      "ext": "105"
+    },
+    {
+      "id": "fac-19",
+      "name": "JINNY PARK (박예진)",
+      "role": "E4 Homeroom",
+      "ext": "106"
+    },
+    {
+      "id": "fac-20",
+      "name": "EKNAM BAJAJ (에크남 바자즈)",
+      "role": "E2 Homeroom / Elementary Lead Teacher",
+      "ext": "104"
+    },
+    {
+      "id": "fac-21",
+      "name": "CHRISTINE PARK (박진희)",
+      "role": "H10 Homeroom / Korean / Physical Education",
+      "ext": "202"
+    },
+    {
+      "id": "fac-22",
+      "name": "MICHELLE LEE (이영은)",
+      "role": "H9 Homeroom / MS English B",
+      "ext": "203"
+    },
+    {
+      "id": "fac-23",
+      "name": "DANIEL KIM (데니얼 김)",
+      "role": "E5 Homeroom / English",
+      "ext": "107"
+    },
+    {
+      "id": "fac-24",
+      "name": "SORA KANG (강소라)",
+      "role": "M7 Homeroom / Science",
+      "ext": "207"
+    },
+    {
+      "id": "fac-27",
+      "name": "MONICA YU (류미연)",
+      "role": "Math, English(A)",
+      "ext": ""
+    },
+    {
+      "id": "fac-28",
+      "name": " (문성환(한국사, 사회))",
+      "role": "Korean History",
+      "ext": ""
+    },
+    {
+      "id": "fac-29",
+      "name": "HAEMI KWAK (곽혜미(수학))",
+      "role": "Math",
+      "ext": ""
+    },
+    {
+      "id": "fac-30",
+      "name": "SUNGHEE KIM (김성희(미술))",
+      "role": "Art",
+      "ext": ""
+    },
+    {
+      "id": "fac-31",
+      "name": " (김보미(음악))",
+      "role": "Music",
+      "ext": ""
+    },
+    {
+      "id": "fac-32",
+      "name": "JISUN HWANG (황지선(중국어))",
+      "role": "Chinese",
+      "ext": ""
+    },
+    {
+      "id": "fac-33",
+      "name": "PAULINE LEE (이은주)",
+      "role": "Admin Staff",
+      "ext": ""
+    },
+    {
+      "id": "fac-34",
+      "name": "STEVEN KIM (김남균)",
+      "role": "Youth Pot Director / Visual Arts Major Program",
+      "ext": ""
+    }
+  ],
+  "multilingual_lor_bridge": {
+    "enabled": true,
+    "description": "For LIS faculty (e.g. David Nah, Kyu Mun Hwang, Peter Yoo) drafting recommendations in Korean. Gemini AI transforms raw Korean notes into academic admissions English for counselor and headmaster review.",
+    "sample_input_language": "Korean",
+    "sample_faculty_recommender": "David Nah (나경식 - College Counselor / Math)",
+    "sample_raw_teacher_notes": "학생은 LIS 고등부 재학 기간 동안 학업에 매우 성실하고 지적 호기심이 탁월했습니다. 특히 수학과 물리, 컴퓨터 과학 분야에서 뛰어난 분석력을 발휘하며, 실험 오차가 발생했을 때 끈기 있게 원인을 규명하는 과학적 태도를 보였습니다. 급우들을 배려하고 섬기는 리더십 또한 매우 모범적입니다.",
+    "ai_converted_english_draft": "\"It is a distinct privilege to recommend this student on behalf of the faculty at Leaders International School. Throughout her academic tenure, she has distinguished herself as a scholar of exceptional intellectual vitality and rigorous analytical integrity. In advanced mathematics, physical sciences, and computing, she demonstrates exemplary perseverance, methodically dissecting discrepancies rather than faltering under empirical challenges. Beyond her scholastic brilliance, she is a humble, compassionate leader who actively uplifts her peers. She epitomizes the highest standards of academic excellence and global leadership.\"",
+    "counselor_approval_status": "Approved by David Nah (College Counselor) to cDocs"
+  }
+}

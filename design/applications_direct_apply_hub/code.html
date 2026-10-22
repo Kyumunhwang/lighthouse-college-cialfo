@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-container": "#cad3ff",
+          "surface": "#faf8ff",
+          "on-surface-variant": "#434655",
+          "surface-container": "#eaedff",
+          "on-primary": "#ffffff",
+          "primary": "#0037b0",
+          "surface-container-low": "#f2f3ff",
+          "background": "#faf8ff",
+          "primary-container": "#1d4ed8",
+          "outline-variant": "#c4c5d7",
+          "inverse-surface": "#283044",
+          "on-secondary-container": "#663500",
+          "on-tertiary": "#ffffff",
+          "secondary": "#904d00",
+          "on-tertiary-fixed-variant": "#005137",
+          "on-tertiary-container": "#76eab6",
+          "surface-variant": "#dae2fd",
+          "surface-container-highest": "#dae2fd",
+          "on-secondary-fixed-variant": "#6e3900",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed-dim": "#b7c4ff",
+          "secondary-container": "#fe932c",
+          "outline": "#747686",
+          "primary-fixed": "#dce1ff",
+          "inverse-on-surface": "#eef0ff",
+          "surface-bright": "#faf8ff",
+          "tertiary-container": "#006948",
+          "surface-tint": "#2151da",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed": "#002114",
+          "surface-dim": "#d2d9f4",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#0039b5",
+          "tertiary": "#004f35",
+          "on-secondary": "#ffffff",
+          "on-background": "#131b2e",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#2f1500",
+          "tertiary-fixed-dim": "#68dba9",
+          "on-surface": "#131b2e",
+          "on-primary-fixed": "#001551",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#85f8c4",
+          "error-container": "#ffdad6",
+          "inverse-primary": "#b7c4ff",
+          "secondary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#ffb77d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "gutter-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="Cialfo AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3vf2gI9z9kN05KW0a6nvsE9CnMssLyZ2mf3KaIIo6CWnW7q3y4eIIMQ4R9XAt9AFgsUA6b7eZWAWML1p_FFo-c0GVWxjqLyfwA-BqTFYf4Y3urYcSKVgGRZAJ3x-io5zKZ8JvO8-e6tPNIbkUMdM_0hhvPM2vX2DuClK3PIA9fllNV2jD8adWnM0EZYb3bbSlEGVfWT7gWuI0o6kFq1VPn_YXjjG69tZDd1b7o6rXPC5y3m_EhVlwrsE"/><span class="font-title-md text-title-md text-primary tracking-tight font-bold hidden sm:inline-block">Cialfo.ai</span><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-full font-semibold uppercase tracking-wider hidden md:inline-block">Global CCR</span></div><div class="flex-1 max-w-xl mx-space-md hidden lg:block"><div class="relative flex items-center w-full h-11 bg-surface-container-lowest rounded-full px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-outline mr-space-xs text-[20px]">search</span><input class="w-full bg-transparent border-0 focus:outline-none font-body-sm text-body-sm text-on-surface placeholder-outline" placeholder="Search universities, courses (e.g. STEAM, Football), scholarships, articles..." type="text"/><span class="flex items-center font-label-sm text-label-sm text-outline bg-surface-container-low px-space-xs py-0.5 rounded font-medium flex-shrink-0">⌘K</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant cursor-pointer hover:bg-surface-container hover:text-on-surface transition-colors"><span>Student (12th Grader)</span><span class="material-symbols-outlined text-[18px]">arrow_drop_down</span></div><button class="relative flex items-center justify-center p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full font-bold">3</span></button><button class="flex items-center gap-space-xs p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat_bubble</span></button><button class="flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-md py-1.5 rounded-full font-label-md text-label-md font-semibold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors shadow-sm" type="button"><span>🦁</span><span class="hidden sm:inline-block">Ask Saige</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQaDufI0EFe_Co8gJC-e_Hhi8MVvLmUgYVfLp_oSNFFbXUC5bAw18Gr7d5b7s1J8dxcNsNxtjKyCnXg-a0L9xcocfo06B-pu2BB1y4N9xd8OzEPCcph-fBfple7bNJb3no_rWvbz8SO_rteFjqcCcM_NlSUBdwBLgEinT73_C8PVDKxLsoUU5HobHgosdRb2Hi2lM-FgCUXOahwBaI3bctu6_FRSZR28yLmYnRNZkvyGdNrmViLN_uw"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Sarah Lin</span><span class="font-label-sm text-label-sm text-outline leading-tight">Class of 2026</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="home-roadmap" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span>Home &amp; Roadmap</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="universities-courses" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span>Universities &amp; Courses</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="bookmarks-compare" href="#"><span class="material-symbols-outlined text-[22px]">bookmarks</span><span>Bookmarks &amp; Compare</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="applications-direct-apply" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span>Applications &amp; Direct Apply</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="structured-recommendations" href="#"><span class="material-symbols-outlined text-[22px]">edit_document</span><span>Structured Recommendations</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discovery-events" href="#"><span class="material-symbols-outlined text-[22px]">public</span><span>Discovery &amp; Events</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="careers-hubs" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span>Careers &amp; Hubs</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1"><div class="flex items-center gap-1.5 font-semibold text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span><span>Singapore American School</span></div><div class="text-outline">Counselor: Dr. Rachel Adams</div><div class="flex items-center gap-1 text-tertiary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span>Direct Apply Partner: Active</span></div></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface w-full min-h-screen px-margin py-margin"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Hub Breadcrumb & Strategic Banner -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span>Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Admissions &amp; Direct Apply 2.0</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Active Cycle 2025–2026</span>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Direct Apply 2.0 Global Stream Active
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          My Global Applications Hub &amp; Direct Apply 2.0
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+          Synchronized institutional pipeline tracking across UCAS, Common App, and Direct Apply 2.0 expedited channels with live condition tracking and automated cDocs validation.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm self-start xl:self-end">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-lg text-label-lg shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Sync All cDocs</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Application</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Metric Overview Bento -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Total Pipeline</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[20px]">folder_open</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold">8</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 USA • 3 UK • 1 AUS</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">In Progress</span>
+<span class="p-1.5 rounded-lg bg-secondary-container/30 text-secondary material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-secondary font-bold">3</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Awaiting cDocs • 1 Draft</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Offers Received</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant material-symbols-outlined text-[20px]">celebration</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-tertiary font-bold">2</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="text-tertiary font-semibold">1 Conditional</span>
+<span class="text-outline">•</span>
+<span class="text-primary font-semibold">1 Uncond.</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Tuition &amp; Deposit</span>
+<span class="p-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">Ready</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Flywire Gateway Linked
+        </span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between col-span-2 md:col-span-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Direct Fees Saved</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed-dim/40 text-tertiary material-symbols-outlined text-[20px]">savings</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold">$680</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fee Waivers Auto-Applied</span>
+</div>
+</div>
+</div>
+<!-- Dedicated Shepherd & Direct Apply 2.0 Progress Ribbon -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-lg">
+<!-- Dedicated Advisor Banner -->
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Professional headshot of male Asian admissions counselor Michael Song wearing smart casual blazer in modern glass office with warm bright natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS_Ujr3bIU1wBI2rk0OozoCXvAOs_WIRtYRFBxzC_Yq07N5-IJUSY4fkAZCgnghmLyXTVjkiKtVPYXdDQhEqJ4wkV3Rh9sNUJlSXuJtLAM8Sp-k3E1ZD4UTsFc2GJ4nVv7xtS3kUwmoqN3yeKAvoGVoFaSMxd8a2DlMmH7nh8Vv1eAiyShn01F4ZvIhjSXD2Xhsmaxx4iuxdMCKSssK89o9fBAMD-eLQOte4dTMHItn-KUuJ9qblx93A"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 bg-tertiary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">Michael Song</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold uppercase">Assigned Shepherd</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> Avg response &lt; 1 min
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Dedicated Cialfo Direct Apply Shepherd • 100% Guaranteed Student Visa Guidance &amp; Accommodation Placements Locked.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto">
+<button class="flex-1 lg:flex-initial inline-flex items-center justify-center gap-2 px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Book Strategy Call</span>
+</button>
+<button class="flex-1 lg:flex-initial inline-flex items-center justify-center gap-2 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Direct Advisor Chat</span>
+</button>
+</div>
+</div>
+<!-- 5-Step Direct Apply 2.0 Flow -->
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Direct Apply 2.0 Milestone Trajectory</h2>
+<p class="font-body-sm text-body-sm text-outline">Stage 3 of 5 active: Offer issuance and conditional prerequisite clearance</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">60% Complete</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<!-- Step 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">STEP 01</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-bold">One-Click Form</div>
+<p class="font-body-sm text-body-sm text-outline">Profile &amp; Transcripts consolidated</p>
+<div class="h-1.5 w-full bg-tertiary rounded-full mt-2"></div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">STEP 02</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-bold">cDocs Express</div>
+<p class="font-body-sm text-body-sm text-outline">Letters &amp; predicted grades dispatched</p>
+<div class="h-1.5 w-full bg-tertiary rounded-full mt-2"></div>
+</div>
+<!-- Step 3 (Active) -->
+<div class="p-space-sm rounded-lg bg-primary-container text-on-primary flex flex-col gap-1.5 shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container">STEP 03 (CURRENT)</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px] animate-spin">refresh</span>
+</div>
+<div class="font-title-md text-title-md text-on-primary font-bold">Conditional Review</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">Live condition checklist validation</p>
+<div class="h-1.5 w-full bg-on-primary rounded-full mt-2"></div>
+</div>
+<!-- Step 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5 opacity-75">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">STEP 04</span>
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-bold">Seat &amp; Flywire Lock</div>
+<p class="font-body-sm text-body-sm text-outline">Deposit remittance &amp; Confirmation (CAS/I-20)</p>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full mt-2"></div>
+</div>
+<!-- Step 5 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5 opacity-75">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">STEP 05</span>
+<span class="material-symbols-outlined text-outline text-[18px]">flight_takeoff</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-bold">Visa &amp; Housing</div>
+<p class="font-body-sm text-body-sm text-outline">Full concierge document readiness</p>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full mt-2"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Flagship Feature: UK Conditional Offer Full-Text Breakdown & Status Gauge -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-lg">
+<!-- Header Institution Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md p-space-md rounded-xl bg-gradient-to-r from-surface-container to-surface-container-low">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-contain bg-surface-container-lowest p-2 shadow-sm" data-alt="Historic stone crest emblem of University of Edinburgh Scotland featuring heraldic castle symbol against deep navy blue academic shield" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDnC3p31UQGqvoQ9xRNLRYutM-hubCO7HfqogxTCXFhYe6OY1pG6KEl-Qk8JELiPI2h94sn946O3g5an-p5ZM1Ace2BfikHdtPdieCUF4Sp3I61t9IdG-fzTuwYTaDMGPHBqJIXwga3qqVOboYdiA_EANMzqNpIigBQX954aj-cesBKoowAOh6SZXdigPeYhHDwjCiaJ4ZGfYMWbNNGN5jDMlUX3m4_0dV_vQHPgn-6TCFoIajtY6PTA"/>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">University of Edinburgh</h2>
+<span class="px-3 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold tracking-wide uppercase">
+              Conditional Offer Disclosed
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">UCAS Course Code: G400</span>
+</div>
+<p class="font-title-md text-title-md text-primary font-semibold mt-0.5">
+            BSc (Hons) Artificial Intelligence &amp; Computer Science
+          </p>
+<span class="font-body-sm text-body-sm text-outline">School of Informatics • College of Science and Engineering • Edinburgh, Scotland (UK)</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+<button class="inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface text-on-surface font-label-md text-label-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Official Offer PDF</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-tertiary hover:bg-on-tertiary-fixed-variant text-on-tertiary font-label-md text-label-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Accept as Firm Choice</span>
+</button>
+</div>
+</div>
+<!-- Dual Layout: Status Visual Gauge + Interactive Live Criteria Verification Checklist -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Radial Status Gauge & Summary Stats (4 cols) -->
+<div class="lg:col-span-4 p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-between text-center gap-space-md">
+<div class="w-full text-left">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Condition Fulfillment Matrix</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Clearance Gauge</h3>
+</div>
+<!-- SVG Ring Gauge -->
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<!-- Background track -->
+<circle class="text-surface-variant" cx="60" cy="60" fill="transparent" r="48" stroke="currentColor" stroke-width="10"></circle>
+<!-- Met portion (3 of 4 => 75%) -->
+<circle class="text-tertiary" cx="60" cy="60" fill="transparent" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="75.4" stroke-linecap="round" stroke-width="10"></circle>
+<!-- At Risk segment indicator -->
+<circle class="text-secondary-container" cx="60" cy="60" fill="transparent" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="245" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">3 / 4</span>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Conditions Met</span>
+</div>
+</div>
+<div class="w-full space-y-2">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Predicted Yield Alignment:</span>
+<span class="font-bold text-tertiary">92% High Probability</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Decision Deadline:</span>
+<span class="font-bold text-error">June 8, 2026 (18:00 BST)</span>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary font-semibold flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span>Pay £2,000 Deposit via Flywire</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Live Criteria Verification Checklist (8 cols) -->
+<div class="lg:col-span-8 flex flex-col justify-between space-y-space-sm">
+<div class="flex items-center justify-between mb-1">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Edinburgh Direct Admissions Breakdown</h3>
+<p class="font-body-sm text-body-sm text-outline">Real-time sync with IBIS portal &amp; verified high school counselor transcripts</p>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">cDocs Verified</span>
+</div>
+<!-- Condition Item 1: IB Total Points -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-variant text-primary font-bold">CONDITION 01</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Overall IB Diploma Score Requirement</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Required: Minimum <strong class="text-on-surface">38 total points</strong> including Theory of Knowledge (TOK) and Extended Essay (EE) points.
+            </p>
+<div class="font-label-sm text-label-sm text-outline">
+              Verified Predicted: <span class="text-on-surface font-semibold">39 Points</span> (Counselor Certified Nov 14, 2025)
+            </div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-1">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">check</span> MET
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">+1 Buffer Point</span>
+</div>
+</div>
+<!-- Condition Item 2: HL Mathematics AA -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-variant text-primary font-bold">CONDITION 02</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">HL Mathematics: Analysis &amp; Approaches</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Required: Minimum <strong class="text-on-surface">Grade 6 or 7</strong> in Higher Level (HL) Mathematics.
+            </p>
+<div class="font-label-sm text-label-sm text-outline">
+              Verified Predicted: <span class="text-on-surface font-semibold">Grade 7</span> (Calculus &amp; Linear Algebra Unit Exam: 96%)
+            </div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-1">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">check</span> MET
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Maximum Mark</span>
+</div>
+</div>
+<!-- Condition Item 3: HL Physics (At Risk / Monitor) -->
+<div class="p-space-md rounded-xl bg-secondary-container/15 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-secondary-container/25 transition-colors">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">CONDITION 03</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">HL Physics Prerequisite</h4>
+<span class="material-symbols-outlined text-secondary text-[18px]">warning</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Required: Minimum <strong class="text-on-surface">Grade 6</strong> at Higher Level.
+            </p>
+<div class="font-label-sm text-label-sm text-secondary font-medium">
+              Current Predicted: <strong class="text-on-surface">Grade 6 (Marginal boundary: 64%)</strong>. Upcoming Mock Exam requires focus.
+            </div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-1">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">priority_high</span> AT RISK / MONITOR
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Advisor Flagged</span>
+</div>
+</div>
+<!-- Condition Item 4: English Language IELTS -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-variant text-primary font-bold">CONDITION 04</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">English Language Proficiency (IELTS Academic)</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Required: <strong class="text-on-surface">Overall 7.0</strong> with no component band lower than 6.5.
+            </p>
+<div class="font-label-sm text-label-sm text-outline">
+              Verified via cDocs: <span class="text-on-surface font-semibold">Overall 7.5</span> (L:8.0, R:8.0, W:7.0, S:7.0) • TRF #24SG001884
+            </div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-1">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">verified</span> VERIFIED
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Official TRF Attached</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Multi-Application Grid (cDocs Transmissions & Essay Tasks) -->
+<div class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Application Pipeline &amp; Task Stream</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Track document transmissions, essay approvals, and external application portal links.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Filter by Channel:</span>
+<div class="flex items-center gap-1 p-1 rounded-lg bg-surface-container-low font-label-sm text-label-sm">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-semibold shadow-xs">All (8)</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface">Direct Apply (3)</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface">UCAS / Common App (5)</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Card A: Northeastern University -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5" data-alt="Northeastern University red and black official seal crest emblem with architectural campus silhouette in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByRYQtYvnTS_yqqfNgnmRJ6BSC5Uifi8C3137lOHlvfS4N2Q2qFaHz0WyXWn0OUpdomOQ1hnrd-NczXHczVMqo7YtGy08lOVesmOrWXd8yjNAmPGZYQiV3_IaZ9dg_qv_e-tnqxvfeoevLCLo6M3WTOVr7yRJi-MK0MBLv4ByCkd7562vt6Mou0rn-9UMT5h1HzwqJHZC4fsS_1V8Z75VZGCjmhk_DZn2TkFAQDGJGuxRCD4PY4RqXcQ"/>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Northeastern University</h3>
+<span class="font-body-sm text-body-sm text-outline">Boston, MA • USA</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+              Common App + Direct
+            </span>
+</div>
+<div class="space-y-1">
+<div class="font-body-md text-body-md font-semibold text-on-surface">
+              B.S. in Computer Science &amp; Cognitive Psychology
+            </div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Regular Decision: Jan 15, 2026</span>
+<span>•</span>
+<span class="text-tertiary font-semibold">Fee: $0 (Waived)</span>
+</div>
+</div>
+<!-- Essay Task Pill -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Essay Task Required</span>
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Approved
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+              “Why Northeastern Co-op?” Supplement Essay (Draft v3)
+            </p>
+<span class="font-label-sm text-label-sm text-outline">Counselor Dr. Rachel Adams approved with notes</span>
+</div>
+<!-- cDocs Status Transmission -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">cDocs Transmission Stream</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Dispatched</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">description</span> Official Transcripts (Grades 9-11)
+                </span>
+<span class="text-on-surface font-semibold text-label-sm">Delivered</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">recommend</span> Counselor Recommendation
+                </span>
+<span class="text-on-surface font-semibold text-label-sm">Sent via cDocs</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Application ID: NEU-90218</span>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors flex items-center gap-1">
+<span>View Common App</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Card B: University of Melbourne -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5" data-alt="University of Melbourne deep blue and gold shield university crest emblem with classic Victorian architectural pillars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRjODdnKrmFObyyZBaqr7oFoUod-gaHFJ1QZpiTTIn-ssN_BQySJYV9HhRxjn9fN6J3hBSYWrRnkRdY4so58SRk-m-NjRDRna1DwipARD0kyTQD3o6-ZXPdx0zdQ5MNJBEZtCre_aL6waryjzglqk6fmqV2vvgETLD5qY7ueNXVAn3RWYu5L887SSHkzIG1HRtRYIwbsDVddhJsw73HXK5Jh1nGVOu4vY9Zma0QXs3_vtO5k2Gny-wjg"/>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">University of Melbourne</h3>
+<span class="font-body-sm text-body-sm text-outline">Melbourne, VIC • Australia</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+              Direct Apply 2.0
+            </span>
+</div>
+<div class="space-y-1">
+<div class="font-body-md text-body-md font-semibold text-on-surface">
+              Bachelor of Science (Data Science Major)
+            </div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Semester 1 (Feb 2026 Intake)</span>
+<span>•</span>
+<span class="text-tertiary font-semibold">Fast-Track Partner</span>
+</div>
+</div>
+<!-- Pending Status Notice -->
+<div class="p-space-sm rounded-lg bg-secondary-container/15 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Expedited Decision</span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span> Expected: 3 Days
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+              Direct Faculty Adjudication underway with automated IB equivalence translation.
+            </p>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-waived AUD $120 application processing fee</span>
+</div>
+<!-- cDocs Status Transmission -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">cDocs Transmission Stream</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Complete</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span> Passport &amp; ID Proof
+                </span>
+<span class="text-on-surface font-semibold text-label-sm">Verified</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">school</span> Senior Mid-Year Marks
+                </span>
+<span class="text-on-surface font-semibold text-label-sm">Transmitted</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Direct Ref: CIALFO-MEL-77</span>
+<button class="px-space-md py-1.5 rounded-lg bg-tertiary hover:bg-on-tertiary-fixed-variant text-on-tertiary font-label-md text-label-md transition-colors flex items-center gap-1">
+<span>Direct Pipeline</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card C: Imperial College London -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5" data-alt="Imperial College London royal blue coat of arms shield with academic motto and modern clean scientific emblem" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfCgbs2Ih22vvWtwfI3wSJBSmLQkpYYsEjK9SsEK6FF2t8frZNfdELlxPmuIDxidBbkb8O4FQ0pl6qSj33YqXW2tdWguHRfd43yfHPfRAVgcqc84Ib-ZLICmfhy2XZQK_fwFKsIHdTbDRFNRgDYkhD2rJDs2bBYlxHSmPAmW1o5lpim2isOGlcfr0HtW-pYp4_8VLh1pS43BUNLQ9ZZrNAOi3jUzxOWPvx151qBSHUYq8V0GDHkQExXg"/>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Imperial College London</h3>
+<span class="font-body-sm text-body-sm text-outline">London, England • UK</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+              UCAS Portal
+            </span>
+</div>
+<div class="space-y-1">
+<div class="font-body-md text-body-md font-semibold text-on-surface">
+              MEng Computing (Software Engineering)
+            </div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-error font-bold">Deadline: Jan 31, 2026</span>
+<span>•</span>
+<span>UCAS Center #14890</span>
+</div>
+</div>
+<!-- Essay Task Pill -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Task: Personal Statement</span>
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">task_alt</span> Version Final
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+              4,000 Characters / 47 Lines Maximum Complete
+            </p>
+<span class="font-label-sm text-label-sm text-outline">Counselor clearance: 100% Ready for UCAS Hub submission</span>
+</div>
+<!-- cDocs Status Transmission -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">cDocs Transmission Stream</span>
+<span class="text-secondary font-label-sm text-label-sm font-bold">Pending Reference</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">grade</span> Academic Predicted Grades (42/45)
+                </span>
+<span class="text-on-surface font-semibold text-label-sm">Attached</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">edit_note</span> Math Teacher LOR (Mr. Davies)
+                </span>
+<span class="text-secondary font-semibold text-label-sm">Final Review</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">UCAS Personal ID: 178-992-019</span>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md transition-colors flex items-center gap-1">
+<span>Manage UCAS</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Integrated Flywire Payment & Visa Preparation Section -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left 7 cols: Payment Drawer & Multi-Currency Engine -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-primary text-on-primary">
+<span class="material-symbols-outlined text-[24px]">currency_exchange</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Flywire Integrated Payment Gateway</h3>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Zero FX Markup</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">
+              Pay university acceptance deposits and tuition in 140+ local currencies via real-time wholesale forex exchange rates.
+            </p>
+</div>
+</div>
+<!-- Interactive FX Conversion Widget Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Currency You Send -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest space-y-1">
+<span class="font-label-sm text-label-sm text-outline">You Remit From Singapore</span>
+<div class="flex items-center justify-between">
+<input class="font-title-lg text-title-lg text-on-surface font-bold bg-transparent outline-none w-32" type="text" value="3,485.50"/>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded font-label-md text-label-md font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span>SGD</span>
+<span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Direct Local Bank Transfer (PayNow / FAST)</span>
+</div>
+<!-- Currency University Receives -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest space-y-1">
+<span class="font-label-sm text-label-sm text-outline">University of Edinburgh Receives</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">£2,000.00</span>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded font-label-md text-label-md font-semibold text-on-surface">
+<span>GBP</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Tuition Acceptance Deposit (CAS Trigger)</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span>Guaranteed FX Rate locked for 48 hours</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors">
+                Alternative Currencies
+              </button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary font-semibold transition-colors shadow-sm">
+                Pay Deposit Now via Flywire
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 5 cols: Student Visa Guidance & Accommodation Ready -->
+<div class="lg:col-span-5 p-space-md rounded-xl bg-surface-container space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="p-1.5 rounded-lg bg-tertiary text-on-tertiary material-symbols-outlined text-[18px]">badge</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">100% Student Visa &amp; Housing</h4>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Included Free</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Your Direct Apply 2.0 status unlocks automated immigration CAS generation and pre-allocated guaranteed halls of residence.
+        </p>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest text-on-surface">
+<div class="flex items-center gap-2 font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>UK Student Route (Tier 4) Visa Checklist</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Ready</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest text-on-surface">
+<div class="flex items-center gap-2 font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-secondary text-[18px]">home_pin</span>
+<span>Edinburgh Pollock Halls Student Accommodation</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Reserved</span>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">contact_support</span>
+<span>Ask Michael Song Regarding Visa Guidance</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

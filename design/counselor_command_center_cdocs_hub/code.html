@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#eaedff",
+          "on-primary-fixed": "#001551",
+          "secondary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#ffb77d",
+          "on-surface-variant": "#434655",
+          "on-secondary": "#ffffff",
+          "surface-container-high": "#e2e7ff",
+          "surface-variant": "#dae2fd",
+          "inverse-on-surface": "#eef0ff",
+          "tertiary": "#004f35",
+          "secondary": "#904d00",
+          "outline-variant": "#c4c5d7",
+          "outline": "#747686",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed-variant": "#005137",
+          "surface": "#faf8ff",
+          "on-error-container": "#93000a",
+          "surface-tint": "#2151da",
+          "on-secondary-container": "#663500",
+          "surface-container-low": "#f2f3ff",
+          "primary": "#0037b0",
+          "on-tertiary-container": "#76eab6",
+          "surface-container-highest": "#dae2fd",
+          "on-secondary-fixed": "#2f1500",
+          "tertiary-fixed-dim": "#68dba9",
+          "on-primary": "#ffffff",
+          "surface-dim": "#d2d9f4",
+          "on-background": "#131b2e",
+          "on-primary-fixed-variant": "#0039b5",
+          "primary-container": "#1d4ed8",
+          "on-secondary-fixed-variant": "#6e3900",
+          "on-primary-container": "#cad3ff",
+          "background": "#faf8ff",
+          "tertiary-container": "#006948",
+          "inverse-surface": "#283044",
+          "inverse-primary": "#b7c4ff",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#fe932c",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-fixed": "#002114",
+          "error": "#ba1a1a",
+          "tertiary-fixed": "#85f8c4",
+          "on-surface": "#131b2e",
+          "primary-fixed-dim": "#b7c4ff",
+          "surface-bright": "#faf8ff",
+          "primary-fixed": "#dce1ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-sm": "1rem",
+          "space-md": "1rem",
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "margin": "2rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">hub</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight font-bold leading-none">Cialfo</span><span class="font-label-sm text-label-sm text-primary font-semibold leading-tight">CCR &amp; Explore</span></div></div><span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-xs py-0.5 rounded">v3.4</span></div><div class="px-space-md py-space-sm"><div class="p-space-xs bg-surface-container-low rounded-lg flex items-center gap-space-xs"><button class="flex-1 flex items-center justify-center gap-space-xs py-1.5 px-space-xs rounded bg-surface-container-lowest text-primary shadow-[0_1px_3px_rgba(0,0,0,0.05)] font-label-sm text-label-sm transition-all"><span class="material-symbols-outlined text-[15px]">school</span>Counselor</button><button class="flex-1 flex items-center justify-center gap-space-xs py-1.5 px-space-xs rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all"><span class="material-symbols-outlined text-[15px]">account_balance</span>Admissions</button></div></div><nav class="flex-1 px-space-md py-space-xs flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><div class="pt-space-sm pb-space-xs px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Counselor Portal</div><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary font-semibold rounded-lg" data-path="students-cohorts" href="#"><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-body-sm text-body-sm">Students Cohorts</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="universities-scattergrams" href="#"><span class="material-symbols-outlined text-[18px]">scatter_plot</span><span class="font-body-sm text-body-sm">Universities &amp; Scattergrams</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cdocs-document-dispatch-hub" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">send_and_archive</span><span class="font-body-sm text-body-sm">cDocs Dispatch Hub</span></div><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded-full">14</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="visits-events" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span class="font-body-sm text-body-sm">Visits &amp; Events</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="broadcast-groups" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-sm text-body-sm">Broadcast &amp; Groups</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports-school-profile" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-body-sm text-body-sm">Reports &amp; Profile</span></a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Admissions (Explore)</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="funnel-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">filter_alt</span><span class="font-body-sm text-body-sm">Funnel Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="high-school-visits-itinerary" href="#"><span class="material-symbols-outlined text-[18px]">route</span><span class="font-body-sm text-body-sm">High School Visits</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="slate-crm-sync" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-body-sm text-body-sm">Slate CRM Sync</span></div><span class="w-2 h-2 rounded-full bg-tertiary-container"></span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="direct-apply-applications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-body-sm text-body-sm">Direct Apply</span></div><span class="font-label-sm text-label-sm bg-tertiary text-on-tertiary px-1.5 py-0.5 rounded-full">Active</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="connections-leads" href="#"><span class="material-symbols-outlined text-[18px]">contact_page</span><span class="font-body-sm text-body-sm">Connections &amp; Leads</span></a></nav></div><div class="p-space-md bg-surface-container-low mx-space-md mb-space-md rounded-xl flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[18px]">support_agent</span></div><div class="flex flex-col flex-1"><span class="font-label-md text-label-md text-on-surface font-semibold">Counselor Concierge</span><span class="font-label-sm text-label-sm text-on-surface-variant">SLA 12m response</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search students, universities, documents..." type="text"/><kbd class="absolute right-3 px-1.5 py-0.5 font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant rounded border border-outline-variant shadow-sm">⌘K</kbd></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><button class="relative p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><button class="p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">United World College (SEA)</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface w-full px-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Banner & Institutional Overview Bar -->
+<div class="relative bg-surface-container-lowest shadow-sm rounded-xl p-space-lg mb-space-lg overflow-hidden">
+<!-- Ambient institutional gradient decoration -->
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-gradient-to-br from-primary/10 via-tertiary/5 to-transparent blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-md shrink-0">
+<span class="material-symbols-outlined text-[32px]">military_tech</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Singapore American School (SAS)</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-xs py-0.5 rounded-full font-semibold">CEEB #687205</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-space-xs py-0.5 rounded-full flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+              Live Dispatch Active
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Class of 2026 Senior Cohort • 142 Active Counselees • Counselor: Eleanor Vance (Lead Director)
+          </p>
+</div>
+</div>
+<!-- Quick Action Utilities -->
+<div class="flex items-center gap-space-xs shrink-0 flex-wrap">
+<button class="px-space-md py-2 rounded-lg bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-md text-label-md flex items-center gap-1.5 shadow-sm transition-all" onclick="toggleDispatchDrawer()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>cDocs Batch Dispatch (94%)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md flex items-center gap-1.5 transition-all" onclick="toggleBroadcastModal()">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span>Cohort Broadcast</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" title="Export SAS Cohort Analytics">
+<span class="material-symbols-outlined text-[20px]">ios_share</span>
+</button>
+</div>
+</div>
+<!-- Metagrid Quick Stats Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-lg pt-space-md">
+<!-- Metric 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Apps</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">584</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3.4 avg / std</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">cDocs Dispatch Ready</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-tertiary-container">94%</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">+6% this wk</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-tertiary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">send_and_archive</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Critical Deadlines</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-secondary">18</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">≤ 7 Days</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">hourglass_top</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Proxy LOR Reviews</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-error">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Korean / Turkish</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-error shadow-sm">
+<span class="material-symbols-outlined text-[22px]">g_translate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Cohort Command Grid Layout (8 cols Table / 4 cols Multi-Tools) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: Main Student Cohort Table (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Preset View Switcher & Table Control Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<!-- Presets -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 md:pb-0">
+<button class="preset-btn px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm" onclick="setCohortPreset(this, 'all')">
+              Grade 12 Senior Apps (142)
+            </button>
+<button class="preset-btn px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all" onclick="setCohortPreset(this, 'oxbridge')">
+              UK Oxbridge / UCAS (28)
+            </button>
+<button class="preset-btn px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all" onclick="setCohortPreset(this, 'ed')">
+              US ED / REA Group (44)
+            </button>
+<button class="preset-btn px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all" onclick="setCohortPreset(this, 'g11')">
+              Grade 11 Discovery (168)
+            </button>
+</div>
+<!-- Secondary Filters & Search -->
+<div class="flex items-center gap-space-xs">
+<div class="relative w-48">
+<span class="material-symbols-outlined absolute left-2 text-outline text-[16px]">filter_list</span>
+<input class="w-full pl-7 pr-3 py-1 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="cohortStudentSearch" placeholder="Filter student..." type="text"/>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant" title="Customize Columns">
+<span class="material-symbols-outlined text-[18px]">view_column</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cohort Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Student / Persona</th>
+<th class="py-3 px-space-sm">SAS GPA / Testing</th>
+<th class="py-3 px-space-sm">Target Scope</th>
+<th class="py-3 px-space-sm">cDocs Matrix</th>
+<th class="py-3 px-space-sm">Overrides</th>
+<th class="py-3 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface" id="cohortTableBody">
+<!-- Row 1: Alistair Chen -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Close up professional portrait of a confident Asian male high school senior wearing school blazer with Singapore American School pins, bright warm studio lighting with blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtoH7J1Au2iTpMR0WfVkpC22B5OLwlLzZZXBeGXjGFoLp_-TU6lQXWIBmMYaH_lQS7F2SMmy3bImG9h0A5zTxAFyH87m0Ly2n5k6EW6dExKAVqMxIodTTgd_GIPLrSVe2rCqwRR5c5-4iBNJOHzQd2NWiCc37gnIn1y2HWxeu65wlzecgoYzPhk7OzfdBB4yv__4fzqi2g6coHRvg14xreF1RW4vlDWzg3ZxyLXY5at3wI5lwpmYGoGg"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Alistair Chen</span>
+<span class="material-symbols-outlined text-primary text-[16px]" title="Counselor Flagged High Priority">star</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-semibold px-1.5 py-0.2 rounded">🦙 Alpaca Lv.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#2026-081</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">UW 3.98 / IB 42</span>
+<span class="font-label-sm text-label-sm text-outline">SAT 1540 (M790/E750)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 rounded font-semibold">US Common (5)</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded font-semibold">UK UCAS (2)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Stanford (REA), Cambridge (Eng)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold" title="Official Transcript: Verified &amp; Sealed">Tx ✓</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold" title="Counselor Recommendation: Signed">cLOR ✓</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold" title="Teacher LOR: 2/2 Complete, 1 Translated Proxy Pending Approval">tLOR 2/2 ⚠️</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm bg-secondary-fixed-dim text-on-secondary-fixed px-1.5 py-0.5 rounded font-bold w-fit">Target (Override)</span>
+<span class="font-label-sm text-label-sm text-outline italic mt-0.5">AI said: Reach</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" onclick="openLoraVerificationModal('Alistair Chen', 'Turkish', 'Dr. Emre Hoffman (Physics)')" title="Review Translated Teacher LOR">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+</button>
+<button class="p-1.5 rounded-lg bg-tertiary-container text-on-tertiary hover:bg-tertiary transition-all" title="One-Click Send Verified cDocs Packet">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="openNoteDrawer('Alistair Chen', 'Stanford REA statement review finalized. Father requested update regarding Caltech early rounds.')" title="Sync Session Notes">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Mia Sun-Woo -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Editorial portrait of an articulate East Asian female student with modern aesthetic, thoughtful expression, wearing minimal chic sweater, warm indoor daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-bsiJ0J_Q1fjkeyAPN-PERHBZj2smOyq7XDQodYn-9DN2RIvK5Q7u9jt17yUHRqAC2QNNVbV8o53srnIkBzCh89xMi_dANkv3Vtba12r-hJox8Wt7WQyLErepaby_T5wOApJjUWVrBi6kDWjwaHQTMyaOdtkMct3PiN5N8Y6w4UeikuyeFEjlSE9gVHB50eNXbVfES0xQ4iqQCY4cVsFBrz7bV4anaqsr-MprtnsrwSB1wZrMPFsow"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Mia Sun-Woo</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary font-semibold px-1.5 py-0.2 rounded">🦊 Focus Fox Lv.5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#2026-019</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">UW 3.89 / IB 40</span>
+<span class="font-label-sm text-label-sm text-outline">ACT 34 Composite</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 rounded font-semibold">US Direct (4)</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">AU Direct (2)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">NYU Stern (ED1), Univ Melbourne</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">Tx ✓</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">cLOR ✓</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold" title="Korean Translated LOR Pending Counselor Sign-off">KR-tLOR ⚠️</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm bg-primary-fixed text-primary font-bold w-fit">Target - Arts Port</span>
+<span class="font-label-sm text-label-sm text-outline italic mt-0.5">Overrode to Match</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" onclick="openLoraVerificationModal('Mia Sun-Woo', 'Korean', 'Mr. Park Sung-Hoon (Fine Arts)')" title="Review Korean Translated Teacher LOR">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+</button>
+<button class="p-1.5 rounded-lg bg-tertiary-container text-on-tertiary hover:bg-tertiary transition-all" title="Dispatch cDocs">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="openNoteDrawer('Mia Sun-Woo', 'Portfolio uploaded to Slate integration gateway. Awaiting verified English summary statement.')">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Devansh Malhotra -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait of South Asian male high school student wearing glasses and dark polo shirt, intelligent enthusiastic demeanor, campus courtyard background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC76EMeK3tak2xTUY2LUcSvfE4h5DyEvOsCPSHTx6ki1YohXU75p_E1yKfPE1mLP2DCHypbhEx-OPebbQ3y5YvcINXa3lHjt1NBCQ_zGAcjiCSt0MPv2hADw_BTTa6_vCrkkr3F_ovYqfKADGbeQxrIEQ7SugLK1gsD8TUVM0A2tXquKVeY2VAYBnWZQ6KCoUuHVjgNLJx1HYKi_ZorQaDUlSZlWfFlthI848EXvErkC0H7OKPBE4E2Cw"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Devansh Malhotra</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-semibold px-1.5 py-0.2 rounded">🦉 Scholar Owl Lv.6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#2026-044</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">UW 3.92 / IB 41</span>
+<span class="font-label-sm text-label-sm text-outline">SAT 1520 (M780/E740)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 rounded font-semibold">US Common (8)</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded font-semibold">CA OUAC (3)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Cornell (ED), Univ of Toronto</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">Tx ✓</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">cLOR ✓</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">tLOR 2/2 ✓</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded font-semibold w-fit">Reach (Algorithmic)</span>
+<span class="font-label-sm text-label-sm text-outline italic mt-0.5">Agreed by Eleanor</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface" title="All LORs verified">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</button>
+<button class="p-1.5 rounded-lg bg-tertiary-container text-on-tertiary hover:bg-tertiary transition-all" title="Dispatch cDocs">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="openNoteDrawer('Devansh Malhotra', 'Financial aid CSS profile submitted. Counselor Mid-Year report queued.')">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Kira Rostova -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait of an energetic Eastern European female teenager with blonde hair, bright friendly smile, dressed in collegiate navy crewneck, warm library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_5NSsgmVW3_7BwxhLj2sSXI_fyHsd-jjQBl4vzq9PAnDwQcMu0NPmEfQGaFuXFVJIKS89psVUCbzm4Bnxlm9cKBbgH4XRzE5fir9he5XDsOIDQFvF6c2ZY64u59-81FxB7V3UF5eZDvuxgaVxQJVcusqbFlcVN3WBgrQTKpeR4lluOMWdUxYAKtLPz_DcDFL9893BoEURsMIyvhDGAKlPsq5hp0xlRZKxyyu32zO-hG93Cy0EoYJvRA"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Kira Rostova</span>
+<span class="material-symbols-outlined text-secondary text-[16px]" title="Deadline within 48h">warning</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold px-1.5 py-0.2 rounded">🦫 Builder Beaver Lv.3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#2026-102</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">UW 3.78 / IB 38</span>
+<span class="font-label-sm text-label-sm text-outline">IELTS 8.0</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded font-semibold">UK UCAS (5)</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary px-1.5 py-0.5 rounded font-semibold">NL Direct (2)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">UCL, King's College London, TU Delft</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1 flex-wrap">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">Tx ✓</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary px-1.5 py-0.5 rounded font-semibold">cLOR In Review</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-semibold">tLOR 2/2 ✓</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary font-bold w-fit">Likely (High IB)</span>
+<span class="font-label-sm text-label-sm text-outline italic mt-0.5">UCAS Predicted: 41</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container-high text-outline" disabled="">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high text-on-surface-variant hover:bg-tertiary-container hover:text-on-tertiary transition-all" title="Seal and Dispatch UCAS Packet">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="openNoteDrawer('Kira Rostova', 'Oxford St John college interview invitation received. Practicing technical questions with physics department.')">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Quick Batch Controller -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span>Showing 4 of 142 seniors</span>
+<span class="text-outline">•</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud_sync</span>
+              Slate CRM Auto-Sync: 4m ago
+            </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container transition-all">Previous</button>
+<span class="px-2 font-bold text-on-surface">1</span>
+<button class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded shadow-sm hover:bg-surface-container transition-all">Next</button>
+</div>
+</div>
+</div>
+<!-- Cohort Application Flow & Deadlines Spark-Track -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_view_week</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Upcoming Early Dispatch Waves (Next 14 Days)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary px-space-xs py-0.5 rounded font-semibold">Nov 1 – Nov 15 Peak</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-error uppercase">Nov 01 • In 3 Days</span>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-1 rounded font-bold">42 Apps</span>
+</div>
+<div class="mt-2">
+<p class="font-label-md text-label-md font-bold text-on-surface">US Early Action &amp; Early Decision 1</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Harvard, Stanford, Yale, Cornell, MIT</p>
+</div>
+<div class="w-full bg-surface-container mt-3 rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 88%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">37 of 42 cDocs bundles transmitted</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Nov 07 • In 9 Days</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1 rounded font-bold">16 Apps</span>
+</div>
+<div class="mt-2">
+<p class="font-label-md text-label-md font-bold text-on-surface">Direct Apply Asia Priority Round</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">NUS, HKU, Seoul National, Waseda</p>
+</div>
+<div class="w-full bg-surface-container mt-3 rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-1">100% Prepared • Instant API Ready</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">Nov 15 • In 17 Days</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-1 rounded font-bold">64 Apps</span>
+</div>
+<div class="mt-2">
+<p class="font-label-md text-label-md font-bold text-on-surface">UC Application Verification Wave</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">UC Berkeley, UCLA, UC San Diego</p>
+</div>
+<div class="w-full bg-surface-container mt-3 rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 52%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">Self-reported coursework review underway</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Side Command Multi-Tools (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Panel 1: Multilingual LOR Review Gate (PP-08 & Cialfo Translate) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">g_translate</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">cDocs Translation Gate</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">3 Pending</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          Non-English Teacher LORs flagged for side-by-side verification before counselor digital signing &amp; Common App upload.
+        </p>
+<!-- Pending Items List -->
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Mia Sun-Woo</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-1 rounded">KR → EN</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Mr. Park Sung-Hoon (Fine Arts)</span>
+</div>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold shrink-0 shadow-sm" onclick="openLoraVerificationModal('Mia Sun-Woo', 'Korean', 'Mr. Park Sung-Hoon (Fine Arts)')">
+              Verify
+            </button>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Alistair Chen</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-1 rounded">TR → EN</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Dr. Emre Hoffman (Physics)</span>
+</div>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold shrink-0 shadow-sm" onclick="openLoraVerificationModal('Alistair Chen', 'Turkish', 'Dr. Emre Hoffman (Physics)')">
+              Verify
+            </button>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Zainab Al-Fassi</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-1 rounded">AR → EN</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Dr. Tareq Mansoor (Arabic Lit)</span>
+</div>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold shrink-0 shadow-sm" onclick="openLoraVerificationModal('Zainab Al-Fassi', 'Arabic', 'Dr. Tareq Mansoor (Arabic Lit)')">
+              Verify
+            </button>
+</div>
+</div>
+</div>
+<!-- Panel 2: Nearby High School Visits Radar (PP-09 & PRD 3.3.3) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">radar</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">Regional Visit Radar</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-semibold px-2 py-0.5 rounded">Singapore Island</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          University admission officers currently in Singapore touring peer campuses. Propose shared stops or student invites.
+        </p>
+<div class="flex flex-col gap-space-sm">
+<!-- Visit Card 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-primary-container text-on-primary font-bold flex items-center justify-center text-[12px]">
+                  CMU
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Carnegie Mellon Univ.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dean of Intl Admissions</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary font-bold px-1.5 py-0.5 rounded">This Thu</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>At UWCSEA Dover (4.2 km away) • 2:00 PM</span>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<button class="flex-1 py-1.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-all" onclick="alert('Slot request dispatched to CMU Admissions Officer via Cialfo Connect!')">
+                Invite to Visit SAS
+              </button>
+<button class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all">
+                Propose Slot
+              </button>
+</div>
+</div>
+<!-- Visit Card 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-inverse-surface text-inverse-on-surface font-bold flex items-center justify-center text-[12px]">
+                  ICL
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Imperial College London</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Faculty of Engineering Liaison</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary font-bold px-1.5 py-0.5 rounded">Friday</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+<span>Tanglin Trust School (Portsdown) • 10:30 AM</span>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<button class="flex-1 py-1.5 rounded bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm font-semibold transition-all" onclick="alert('Joint STEM Workshop invitation sent to Imperial representative!')">
+                Co-Host Joint Session
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Cialfo Groups & Target Cohort Broadcast (PRD 3.3.1) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">group_work</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">Cohort Groups &amp; Broadcast</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline" onclick="toggleBroadcastModal()">
+            + New Group
+          </button>
+</div>
+<div class="space-y-space-xs">
+<!-- Group 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">US Early Decision 1</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-1 rounded font-semibold">44 std</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Parent signature check reminder sent</span>
+</div>
+<button class="p-1.5 rounded bg-surface-container-lowest text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all" onclick="quickDispatchMessage('US Early Decision 1')">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<!-- Group 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Oxford &amp; Cambridge UCAS</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1 rounded font-semibold">28 std</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Mock Interview bookings open</span>
+</div>
+<button class="p-1.5 rounded bg-surface-container-lowest text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all" onclick="quickDispatchMessage('Oxford &amp; Cambridge UCAS')">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<!-- Group 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">IELTS / TOEFL Prep Batch</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1 rounded font-semibold">19 std</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Official test date: Dec 06</span>
+</div>
+<button class="p-1.5 rounded bg-surface-container-lowest text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all" onclick="quickDispatchMessage('IELTS / TOEFL Prep Batch')">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over / Modal 1: Multilingual LOR Side-by-Side Verification Gate (PP-08) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden items-center justify-center p-space-md" id="lorVerificationModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">g_translate</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="modalStudentTitle">Teacher LOR Verification</h2>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">AI Certified Proxy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalTeacherSub">Review original vs translated English transcript before signing for Common App transmission.</p>
+</div>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-colors" onclick="closeLoraModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Side-by-Side Dual Editor Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md p-space-lg overflow-y-auto bg-surface-container-low">
+<!-- Left: Original Source Language -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline" id="originalLangTag">Original Submission (Korean)</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Authenticated Author
+            </span>
+</div>
+<div class="font-body-md text-body-md text-on-surface space-y-3 leading-relaxed" id="originalTextContent">
+<p><strong>수신:</strong> 입학 사정관 귀하</p>
+<p>박성훈 교사입니다. 저는 지난 2년간 미술 심화 과정(AP Studio Art)에서 본 학생을 지도하며 학생의 뛰어난 창의성과 독창적인 비판적 사고를 직접 목격했습니다.</p>
+<p>특히 전통 한국 수묵화 기법과 현대 디지털 미디어를 융합한 개인 캡스톤 프로젝트는 교내 전시에서 최고 평가를 받았으며, 급우들과 협업할 때 보여준 성실함과 리더십은 SAS 전체 학년에서도 매우 두드러집니다.</p>
+<p>학생의 탐구 정신과 예술적 끈기를 강력히 추천합니다.</p>
+</div>
+</div>
+<!-- Right: Verified English Translation (Editable by Counselor) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Cialfo AI Neural Translation (English)</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary font-semibold px-1.5 py-0.5 rounded">99.4% Accuracy Match</span>
+</div>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary leading-relaxed resize-none" id="translatedTextContent" rows="11">To the Admissions Committee:
+
+I am writing as the AP Studio Art Instructor for the student over the past two academic years. During this period, I have directly observed exceptional creativity and rigorous critical thinking.
+
+In particular, the student's capstone project—synthesizing traditional Korean ink-wash techniques with contemporary digital generative media—received the highest honor in our annual campus exhibition. The empathy, diligence, and artistic leadership demonstrated when mentoring junior classmates distinguish this student among the top 1% of the cohort.
+
+I offer my highest and most unreserved recommendation.</textarea>
+<div class="mt-2 flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Signed electronically with Cialfo Secure cDocs Proxy Key</span>
+<button class="text-primary font-semibold hover:underline">Re-run translation</button>
+</div>
+</div>
+</div>
+<!-- Modal Footer Action -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-0" id="counselorCertify" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface" for="counselorCertify">
+            I certify this translation reflects the authentic evaluation of the recommender.
+          </label>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="closeLoraModal()">
+            Save Draft
+          </button>
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" onclick="confirmTranslationSignoff()">
+<span class="material-symbols-outlined text-[18px]">draw</span>
+<span>Approve, Sign &amp; Transmit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over 2: Instant Counselor Meeting Notes Drawer -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[460px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col" id="counselorNotesDrawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md font-bold text-on-surface" id="drawerStudentName">Counselor Session Notes</h3>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Auto-Sync to Slate CRM Enabled
+          </span>
+</div>
+</div>
+<button class="p-1 rounded-full hover:bg-surface-container-high text-on-surface-variant" onclick="closeNoteDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Body -->
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-1 block">Active Working Note</label>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary resize-none" id="drawerNoteText" rows="6"></textarea>
+</div>
+<!-- Prior Session Log -->
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold mb-2 block">Prior Interactions Timeline</label>
+<div class="space-y-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span>Oct 24, 2024 • 45m In-Person</span>
+<span class="text-primary font-bold">Eleanor Vance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Finalized early application list. Student committed to Stanford REA and Cambridge Computer Science via UCAS. Common App personal statement approved.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span>Sep 18, 2024 • Zoom (Family)</span>
+<span class="text-primary font-bold">Eleanor Vance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Discussed financial certification for international students. Parents confirmed family trust affidavit readiness.</p>
+</div>
+</div>
+</div>
+<!-- Quick Action Tags -->
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold mb-1.5 block">Quick Action Flags</label>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-all">+ Add Mid-Year Hold</button>
+<button class="px-2 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-all">+ Request Financial Form</button>
+<button class="px-2 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-all">+ Schedule Mock Interview</button>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Last edited just now</span>
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" onclick="saveNoteAndClose()">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save &amp; Sync Slate</span>
+</button>
+</div>
+</div>
+<!-- Interactive Modal 3: Cohort Quick Broadcast Window (PRD 3.3.1) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden items-center justify-center p-space-md" id="cohortBroadcastModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-lg w-full flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">campaign</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Target Cohort Broadcast</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Push via Cialfo App, Student Email &amp; Parent Portal</p>
+</div>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant" onclick="toggleBroadcastModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-1 block">Recipient Group</label>
+<select class="w-full p-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="broadcastGroupSelect">
+<option>US Early Decision 1 Applicants (44 Students, 68 Parents)</option>
+<option>UK Oxbridge / UCAS Cohort (28 Students)</option>
+<option>IELTS / TOEFL Testing Group (19 Students)</option>
+<option>All Grade 12 Seniors (142 Students, 210 Parents)</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-1 block">Subject Header</label>
+<input class="w-full p-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" type="text" value="URGENT: Common App Ferpa &amp; Early Decision Agreement Checklist"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-1 block">Message Payload</label>
+<textarea class="w-full p-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary resize-none" rows="4">Seniors: As the Nov 01 ED deadline approaches in 3 days, ensure both your ED Agreement signature and parental signature are stamped in Common App before 5:00 PM SGT. The counseling office will begin final cDocs dispatch sealing tomorrow.</textarea>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Estimated read time: 35s</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="toggleBroadcastModal()">Cancel</button>
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" onclick="sendBroadcast()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Broadcast Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline JavaScript for Reactive Counselor Workflows -->
+<script>
+  function setCohortPreset(button, filterType) {
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.className = 'preset-btn px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all';
+    });
+    button.className = 'preset-btn px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm';
+    
+    // Visual feedback for filter
+    const rows = document.querySelectorAll('#cohortTableBody tr');
+    rows.forEach((row, index) => {
+      if (filterType === 'oxbridge') {
+        row.style.display = (index === 0 || index === 3) ? '' : 'none';
+      } else if (filterType === 'ed') {
+        row.style.display = (index === 0 || index === 1 || index === 2) ? '' : 'none';
+      } else {
+        row.style.display = '';
+      }
+    });
+  }
+
+  // Student filter search box
+  document.getElementById('cohortStudentSearch')?.addEventListener('input', function(e) {
+    const val = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#cohortTableBody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(val) ? '' : 'none';
+    });
+  });
+
+  // Modal 1: Multilingual LOR Verification
+  function openLoraVerificationModal(student, lang, teacher) {
+    const modal = document.getElementById('lorVerificationModal');
+    document.getElementById('modalStudentTitle').innerText = `${student} • LOR Verification`;
+    document.getElementById('modalTeacherSub').innerText = `${teacher} &bull; Side-by-side verification before signing and transmitting to Common App/UCAS.`;
+    document.getElementById('originalLangTag').innerText = `Original Submission (${lang})`;
+    
+    if (lang === 'Turkish') {
+      document.getElementById('originalTextContent').innerHTML = `
+        <p><strong>Kime:</strong> Kabul Komisyonu Başkanlığına</p>
+        <p>SAS Fizik Bölümünden Dr. Emre Hoffman. Alistair son iki yıldır İleri Düzey Fizik (AP Physics C) ve Kuantum Mekaniği seminer grubumun en parlak öğrencilerinden biri olmuştur.</p>
+        <p>Analitik düşünme becerisi, karmaşık hesaplamalı modellemelerdeki başarısı ve uluslararası fizik olimpiyatlarındaki üstün azmi SAS tarihinde nadir görülen düzeydedir.</p>
+        <p>Stanford Üniversitesi mühendislik programı için en içten tavsiyelerimi sunarım.</p>
+      `;
+      document.getElementById('translatedTextContent').value = `To the Admissions Committee:\n\nI am Dr. Emre Hoffman from the SAS Physics Department. Alistair has been one of the most brilliant students in my Advanced AP Physics C and Quantum Mechanics seminar over the past two years.\n\nHis analytical faculties, mastery in complex computational modeling, and disciplined drive during the International Physics Olympiad represent a caliber rarely seen in SAS history.\n\nI offer my most sincere and unreserved recommendation for Stanford University Engineering.`;
+    }
+    
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeLoraModal() {
+    const modal = document.getElementById('lorVerificationModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function confirmTranslationSignoff() {
+    alert('LOR successfully verified, sealed with counselor signature token, and queued for cDocs Common App dispatch!');
+    closeLoraModal();
+  }
+
+  // Slide-over 2: Notes Drawer
+  function openNoteDrawer(student, initialNote) {
+    document.getElementById('drawerStudentName').innerText = `${student} &bull; Counselor Notes`;
+    document.getElementById('drawerNoteText').value = initialNote;
+    const drawer = document.getElementById('counselorNotesDrawer');
+    drawer.classList.remove('translate-x-full');
+  }
+
+  function closeNoteDrawer() {
+    const drawer = document.getElementById('counselorNotesDrawer');
+    drawer.classList.add('translate-x-full');
+  }
+
+  function saveNoteAndClose() {
+    alert('Notes synchronized with SAS School Information System & Slate CRM profile!');
+    closeNoteDrawer();
+  }
+
+  // Modal 3: Broadcast
+  function toggleBroadcastModal() {
+    const modal = document.getElementById('cohortBroadcastModal');
+    if (modal.classList.contains('hidden')) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function quickDispatchMessage(groupName) {
+    document.getElementById('broadcastGroupSelect').value = `${groupName} Applicants (44 Students, 68 Parents)`;
+    toggleBroadcastModal();
+  }
+
+  function sendBroadcast() {
+    alert('Broadcast transmitted across Student Mobile App, Email and Guardian Portal with 99.8% push delivery status.');
+    toggleBroadcastModal();
+  }
+
+  function toggleDispatchDrawer() {
+    alert('cDocs Express Dispatch Engine: 134 of 142 packets fully sealed with SAS official school seal. 8 awaiting proxy review.');
+  }
+</script></main></div></body></html>

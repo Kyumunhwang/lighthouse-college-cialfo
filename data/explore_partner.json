@@ -1,0 +1,94 @@
+{
+  "institution": {
+    "name": "Imperial College London (International Admissions)",
+    "officer_name": "Dr. Alistair Finch",
+    "role": "Head of Asia-Pacific & International Recruitment",
+    "explore_partner_tier": "Global Enterprise Direct Apply Partner",
+    "slate_crm_sync": "Active (Technolutions Slate API v2)"
+  },
+  "funnel_metrics": {
+    "connections": {
+      "total": 3840,
+      "yoy_growth": "+28.4%",
+      "sources": {
+        "profile_visits": 1640,
+        "list_shortlisted": 1280,
+        "virtual_event_registrations": 620,
+        "offline_fair_qr_scans": 300
+      }
+    },
+    "shortlisted": {
+      "total": 1420,
+      "yoy_growth": "+19.1%"
+    },
+    "applicants": {
+      "total": 480,
+      "direct_apply_count": 312,
+      "ucas_standard_count": 168
+    },
+    "offers": {
+      "total": 142,
+      "conditional_offers": 124,
+      "unconditional_offers": 18,
+      "offer_acceptance_rate": "78.2%"
+    }
+  },
+  "ai_recommended_visits": [
+    {
+      "high_school": "Taipei American School",
+      "city": "Taipei",
+      "country": "Taiwan",
+      "reason": "45% surge in student profile views for BEng AI and Robotics over the last 30 days.",
+      "counselor_contact": "Dr. Evelyn Chao",
+      "preferred_mode": "In-Person (Auditorium)",
+      "recommended_dates": "Nov 12 - Nov 16"
+    },
+    {
+      "high_school": "Dalton School Seoul",
+      "city": "Incheon / Seoul",
+      "country": "South Korea",
+      "reason": "Top 5 school for IB HL Math AA test takers with high Direct Apply intent.",
+      "counselor_contact": "Mr. Sean Park",
+      "preferred_mode": "In-Person (Gate D Security Protocol)",
+      "recommended_dates": "Nov 18 - Nov 20"
+    }
+  ],
+  "high_school_visits_schedule": [
+    {
+      "id": "vis-001",
+      "school_name": "Singapore American School",
+      "city": "Singapore",
+      "date": "2026-11-04",
+      "time_slot": "10:30 - 12:00 SGT",
+      "format": "In-Person (Campus Theatre)",
+      "booking_type": "Instant Booked (Blue Button)",
+      "status": "Confirmed",
+      "registered_students": 54,
+      "security_instructions": "Check in at Main Gate Visitor Centre with Passport / ID. Laptop security check mandatory.",
+      "rating": {
+        "overall_experience": 5.0,
+        "student_engagement": 4.9,
+        "event_organization": 5.0,
+        "event_facilities": 4.8
+      }
+    },
+    {
+      "id": "vis-002",
+      "school_name": "Hisar School",
+      "city": "Istanbul, Turkey",
+      "date": "2026-11-24",
+      "time_slot": "14:00 - 15:30 TRT",
+      "format": "In-Person / Hybrid",
+      "booking_type": "Flexible Window Request (White Button)",
+      "status": "Counter-Proposed Time Accepted",
+      "registered_students": 38,
+      "security_instructions": "Gate C Access. Counselor Office escort provided.",
+      "rating": {
+        "overall_experience": 4.8,
+        "student_engagement": 5.0,
+        "event_organization": 4.7,
+        "event_facilities": 4.9
+      }
+    }
+  ]
+}

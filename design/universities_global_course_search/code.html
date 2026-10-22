@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-container": "#cad3ff",
+          "surface": "#faf8ff",
+          "on-surface-variant": "#434655",
+          "surface-container": "#eaedff",
+          "on-primary": "#ffffff",
+          "primary": "#0037b0",
+          "surface-container-low": "#f2f3ff",
+          "background": "#faf8ff",
+          "primary-container": "#1d4ed8",
+          "outline-variant": "#c4c5d7",
+          "inverse-surface": "#283044",
+          "on-secondary-container": "#663500",
+          "on-tertiary": "#ffffff",
+          "secondary": "#904d00",
+          "on-tertiary-fixed-variant": "#005137",
+          "on-tertiary-container": "#76eab6",
+          "surface-variant": "#dae2fd",
+          "surface-container-highest": "#dae2fd",
+          "on-secondary-fixed-variant": "#6e3900",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed-dim": "#b7c4ff",
+          "secondary-container": "#fe932c",
+          "outline": "#747686",
+          "primary-fixed": "#dce1ff",
+          "inverse-on-surface": "#eef0ff",
+          "surface-bright": "#faf8ff",
+          "tertiary-container": "#006948",
+          "surface-tint": "#2151da",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed": "#002114",
+          "surface-dim": "#d2d9f4",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#0039b5",
+          "tertiary": "#004f35",
+          "on-secondary": "#ffffff",
+          "on-background": "#131b2e",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#2f1500",
+          "tertiary-fixed-dim": "#68dba9",
+          "on-surface": "#131b2e",
+          "on-primary-fixed": "#001551",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#85f8c4",
+          "error-container": "#ffdad6",
+          "inverse-primary": "#b7c4ff",
+          "secondary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#ffb77d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "gutter-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="Cialfo AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3vf2gI9z9kN05KW0a6nvsE9CnMssLyZ2mf3KaIIo6CWnW7q3y4eIIMQ4R9XAt9AFgsUA6b7eZWAWML1p_FFo-c0GVWxjqLyfwA-BqTFYf4Y3urYcSKVgGRZAJ3x-io5zKZ8JvO8-e6tPNIbkUMdM_0hhvPM2vX2DuClK3PIA9fllNV2jD8adWnM0EZYb3bbSlEGVfWT7gWuI0o6kFq1VPn_YXjjG69tZDd1b7o6rXPC5y3m_EhVlwrsE"/><span class="font-title-md text-title-md text-primary tracking-tight font-bold hidden sm:inline-block">Cialfo.ai</span><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-full font-semibold uppercase tracking-wider hidden md:inline-block">Global CCR</span></div><div class="flex-1 max-w-xl mx-space-md hidden lg:block"><div class="relative flex items-center w-full h-11 bg-surface-container-lowest rounded-full px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-outline mr-space-xs text-[20px]">search</span><input class="w-full bg-transparent border-0 focus:outline-none font-body-sm text-body-sm text-on-surface placeholder-outline" placeholder="Search universities, courses (e.g. STEAM, Football), scholarships, articles..." type="text"/><span class="flex items-center font-label-sm text-label-sm text-outline bg-surface-container-low px-space-xs py-0.5 rounded font-medium flex-shrink-0">⌘K</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant cursor-pointer hover:bg-surface-container hover:text-on-surface transition-colors"><span>Student (12th Grader)</span><span class="material-symbols-outlined text-[18px]">arrow_drop_down</span></div><button class="relative flex items-center justify-center p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full font-bold">3</span></button><button class="flex items-center gap-space-xs p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat_bubble</span></button><button class="flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-md py-1.5 rounded-full font-label-md text-label-md font-semibold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors shadow-sm" type="button"><span>🦁</span><span class="hidden sm:inline-block">Ask Saige</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQaDufI0EFe_Co8gJC-e_Hhi8MVvLmUgYVfLp_oSNFFbXUC5bAw18Gr7d5b7s1J8dxcNsNxtjKyCnXg-a0L9xcocfo06B-pu2BB1y4N9xd8OzEPCcph-fBfple7bNJb3no_rWvbz8SO_rteFjqcCcM_NlSUBdwBLgEinT73_C8PVDKxLsoUU5HobHgosdRb2Hi2lM-FgCUXOahwBaI3bctu6_FRSZR28yLmYnRNZkvyGdNrmViLN_uw"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Sarah Lin</span><span class="font-label-sm text-label-sm text-outline leading-tight">Class of 2026</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="home-roadmap" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span>Home &amp; Roadmap</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="universities-courses" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span>Universities &amp; Courses</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="bookmarks-compare" href="#"><span class="material-symbols-outlined text-[22px]">bookmarks</span><span>Bookmarks &amp; Compare</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="applications-direct-apply" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span>Applications &amp; Direct Apply</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="structured-recommendations" href="#"><span class="material-symbols-outlined text-[22px]">edit_document</span><span>Structured Recommendations</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discovery-events" href="#"><span class="material-symbols-outlined text-[22px]">public</span><span>Discovery &amp; Events</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="careers-hubs" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span>Careers &amp; Hubs</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1"><div class="flex items-center gap-1.5 font-semibold text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px]">verified</span><span>Singapore American School</span></div><div class="text-outline">Counselor: Dr. Rachel Adams</div><div class="flex items-center gap-1 text-tertiary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span>Direct Apply Partner: Active</span></div></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface w-full min-h-screen px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Notification Banner (Smart Scope Fix PP-02) -->
+<div class="mb-space-md w-full bg-gradient-to-r from-primary/10 via-surface-container-high to-surface-container p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm z-10">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Smart Scope Active: No 0-Result Dead Ends</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-space-xs py-0.5 rounded-full font-semibold uppercase">Global Live Index</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Showing 12,400+ institutions globally with instant Direct Apply fee-waivers and multi-curriculum equivalence mapped to Singapore American School historical scattergrams.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm z-10 shrink-0">
+<button class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1.5 rounded-full shadow-sm hover:bg-surface-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">tune</span>
+<span>Equivalence Rules</span>
+</button>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1.5 rounded-full shadow-sm hover:bg-primary-container transition-colors flex items-center gap-1">
+<span>Instant Qualify</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</button>
+</div>
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+<!-- Smart Scope Switching Navigation (PP-02 Fix) -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-xs p-1 bg-surface-container rounded-full overflow-x-auto max-w-full">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">public</span>
+<span>All Universities (Global DB: 12,400+)</span>
+<span class="ml-1 w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-all whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span>My Bookmarks</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-primary font-bold rounded-full text-[10px]">14</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-all whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+<span>Courses &amp; Pathways</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-outline font-medium rounded-full text-[10px]">5,039</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-all whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">paid</span>
+<span>Scholarships</span>
+<span class="px-1.5 py-0.2 bg-secondary-fixed text-on-secondary-fixed-variant font-bold rounded-full text-[10px]">840</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low px-space-sm py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sync</span>
+<span>Counselor Approved Only</span>
+<div class="w-7 h-4 bg-tertiary-container rounded-full flex items-center p-0.5 cursor-pointer ml-1">
+<div class="w-3 h-3 bg-on-tertiary rounded-full ml-auto shadow-sm"></div>
+</div>
+</div>
+<div class="flex bg-surface-container-low rounded-lg p-0.5">
+<button class="p-1.5 rounded bg-surface-container-lowest text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">view_agenda</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Multi-Curriculum Global Filter Bar (PP-12 Fix) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-sm pb-space-xs">
+<!-- Region Selector -->
+<div class="flex items-center gap-1.5 bg-surface-container-low px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">language</span>
+<span class="font-bold">Region:</span>
+<span class="text-primary font-semibold">UK, USA, Australia +3</span>
+<span class="material-symbols-outlined text-[16px] text-outline ml-1">expand_more</span>
+</div>
+<!-- IB Score Filter -->
+<div class="flex items-center gap-1.5 bg-surface-container-low px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">award_star</span>
+<span class="font-bold">Target IB:</span>
+<span class="bg-surface-container-highest px-2 py-0.5 rounded font-mono font-bold text-on-surface">36-42 pts</span>
+<span class="text-outline font-mono text-[11px]">(HL 6,6,6)</span>
+<span class="material-symbols-outlined text-[16px] text-outline ml-1">tune</span>
+</div>
+<!-- Equivalence Switcher -->
+<div class="flex items-center gap-1.5 bg-surface-container-low px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">calculate</span>
+<span class="font-bold">Equivalence:</span>
+<span class="text-on-surface-variant">SAS Unweighted 3.94 / SAT 1510</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+</div>
+<!-- Major & Discipline -->
+<div class="flex items-center gap-1.5 bg-surface-container-low px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface flex-1 min-w-[200px]">
+<span class="material-symbols-outlined text-[18px] text-outline">school</span>
+<span class="font-bold">Discipline:</span>
+<span class="truncate text-on-surface">CompSci, AI, Informatics &amp; Data</span>
+</div>
+<button class="bg-surface-container text-on-surface font-label-md text-label-md px-space-md py-2 rounded-lg hover:bg-surface-container-high transition-colors flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[18px]">filter_alt</span>
+<span>All 9 Filters</span>
+<span class="w-4 h-4 rounded-full bg-primary text-on-primary text-[10px] flex items-center justify-center font-bold">4</span>
+</button>
+</div>
+<!-- Application Direct Portals Pill Filter Strip -->
+<div class="flex items-center gap-space-xs flex-wrap pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider mr-2">Application Routes:</span>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>⚡ Direct Apply (Fee Waived: 100%)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+<span>🌊 Common App Direct</span>
+<span class="font-mono text-outline text-[11px]">(2,410)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+<span>🇬🇧 UCAS Direct Sync</span>
+<span class="font-mono text-outline text-[11px]">(148)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+<span>🏛️ Coalition App (CCC)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+<span>🌏 Direct Institutional</span>
+</button>
+<span class="ml-auto font-label-sm text-label-sm text-outline">Matching 184 universities</span>
+</div>
+</div>
+<!-- Two Column Layout: Left Search Feed + Right Slide-over Overview Mini-Drawer -->
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- LEFT: Results Stream (8 of 12 columns on xl, 12 on mobile) -->
+<div class="col-span-12 xl:col-span-8 flex flex-col gap-space-md">
+<!-- CARD 1: University of Edinburgh (Active/Selected Card) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md relative overflow-hidden transition-all ring-2 ring-primary">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-r from-primary via-tertiary to-primary-container"></div>
+<div class="flex flex-col md:flex-row gap-space-md justify-between">
+<div class="flex gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center font-headline-md text-headline-md font-bold text-primary shrink-0 relative overflow-hidden shadow-sm">
+<span class="z-10 font-serif">Ed</span>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-lg text-title-lg font-bold text-on-surface hover:text-primary cursor-pointer">University of Edinburgh</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">🇬🇧 Scotland, UK</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span>Direct Apply Partner</span>
+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">UCAS Sync Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">BSc (Hons) Computer Science &amp; Artificial Intelligence (4-Year Pathway)</p>
+<!-- Multi-Curriculum Parsed Conditions -->
+<div class="mt-space-sm flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">IB Requirement:</span>
+<span class="text-on-surface font-bold">38 (HL 6,6,6 inc. Math AA)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">Acceptance Rate:</span>
+<span class="text-on-surface font-bold">12.4%</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">App Fee:</span>
+<span class="text-tertiary font-bold line-through text-outline">£27.50</span>
+<span class="text-tertiary font-bold">Waived (£0)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Likelihood Dual Ratings & CTAs -->
+<div class="flex flex-col md:items-end justify-between shrink-0 gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<!-- Cialfo AI Engine -->
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">Cialfo AI Fit</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">Target (82%)</span>
+</div>
+<!-- Counselor Manual Approval -->
+<div class="flex flex-col items-end pl-2">
+<span class="font-label-sm text-label-sm text-outline">Counselor Verified</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+<span>Likely (Dr. Adams)</span>
+</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-colors">
+                View Scattergram
+              </button>
+<button class="px-space-md py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-label-md text-label-md font-bold hover:bg-tertiary transition-colors flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Direct Apply</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Parser Pill Ribbon -->
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-md -mb-space-md px-space-md pb-space-sm flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+<span>Full Conditions Parsed (HL Maths Analysis satisfied via SAS AP Calc BC 5)</span>
+</span>
+<span class="hidden md:inline-flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Direct Apply Closes: Dec 15</span>
+</span>
+</div>
+<span class="text-primary font-semibold cursor-pointer hover:underline flex items-center gap-0.5">
+<span>Inspector Open in Slide-over</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 2: Northeastern University (USA) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex flex-col md:flex-row gap-space-md justify-between">
+<div class="flex gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center font-headline-md text-headline-md font-bold text-error shrink-0 relative overflow-hidden shadow-sm">
+<span class="z-10 font-serif">NE</span>
+<div class="absolute inset-0 bg-error/10"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-lg text-title-lg font-bold text-on-surface hover:text-primary cursor-pointer">Northeastern University</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">🇺🇸 Boston, MA - USA</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">🌊 Common App</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span>Direct Apply Co-op</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Khoury College of Computer Sciences - Major: CS &amp; Behavioral Cognitive Science</p>
+<!-- Multi-Curriculum Parsed Conditions -->
+<div class="mt-space-sm flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">Admit GPA Avg:</span>
+<span class="text-on-surface font-bold">3.91 UW</span>
+<span class="text-tertiary font-bold">(Your GPA: 3.94)</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">Acceptance Rate:</span>
+<span class="text-error font-bold">6.8% (Highly Selective)</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">groups</span>
+<span>+14 SAS Alumni Attending (Verified)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Likelihood Dual Ratings & CTAs -->
+<div class="flex flex-col md:items-end justify-between shrink-0 gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">Cialfo AI Fit</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-bold">Reach (38%)</span>
+</div>
+<div class="flex flex-col items-end pl-2">
+<span class="font-label-sm text-label-sm text-outline">Counselor Verified</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">Target (Early Action)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-colors">
+                Scattergram (34 Admits)
+              </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors">
+                Add to Application
+              </button>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-md -mb-space-md px-space-md pb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">school</span>
+<span>Historical acceptance rate for Singapore American School students: <strong>28.4%</strong> (4.1x global avg)</span>
+</div>
+<span class="text-outline">Regular Deadline: Jan 1</span>
+</div>
+</div>
+<!-- CARD 3: University of Sydney (Australia) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex flex-col md:flex-row gap-space-md justify-between">
+<div class="flex gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center font-headline-md text-headline-md font-bold text-secondary shrink-0 relative overflow-hidden shadow-sm">
+<span class="z-10 font-serif">USyd</span>
+<div class="absolute inset-0 bg-secondary/10"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-lg text-title-lg font-bold text-on-surface hover:text-primary cursor-pointer">University of Sydney</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">🇦🇺 Sydney, Australia</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span>⚡ Direct Apply (100% Free)</span>
+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span>
+<span>Fast-Track 48h Offer</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bachelor of Advanced Computing &amp; Science (Dalyell Scholars Stream)</p>
+<!-- Multi-Curriculum Parsed Conditions -->
+<div class="mt-space-sm flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">ATAR Guaranteed:</span>
+<span class="text-on-surface font-bold">95.00 (IB 36 conversion verified)</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">Payment:</span>
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_balance_wallet</span>
+<span>Flywire zero-fx direct</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Likelihood Dual Ratings & CTAs -->
+<div class="flex flex-col md:items-end justify-between shrink-0 gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">Cialfo AI Fit</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">Likely (94%)</span>
+</div>
+<div class="flex flex-col items-end pl-2">
+<span class="font-label-sm text-label-sm text-outline">Counselor Verified</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">Safety / Guaranteed</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-colors">
+                Brochure &amp; Syllabus
+              </button>
+<button class="px-space-md py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-label-md text-label-md font-bold hover:bg-tertiary transition-colors flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Fast Apply (48h)</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-md -mb-space-md px-space-md pb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Direct Partner Benefit: Application Fee Waived AUD $150 + Dedicated Admission Shepherd</span>
+</div>
+<span class="text-outline">Semester 1 Intake: Feb 2026</span>
+</div>
+</div>
+<!-- CARD 4: National University of Singapore (NUS) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex flex-col md:flex-row gap-space-md justify-between">
+<div class="flex gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center font-headline-md text-headline-md font-bold text-on-surface-variant shrink-0 relative overflow-hidden shadow-sm">
+<span class="z-10 font-serif">NUS</span>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-lg text-title-lg font-bold text-on-surface hover:text-primary cursor-pointer">National University of Singapore</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">🇸🇬 Singapore</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Direct Portal Only</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-semibold">QS World #8</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">School of Computing - Bachelor of Computing (Computer Science Honours)</p>
+<!-- Multi-Curriculum Parsed Conditions -->
+<div class="mt-space-sm flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">Competitive Cutoff:</span>
+<span class="text-on-surface font-bold">IB 41+ (HL Math AA 7)</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm">
+<span class="text-outline font-semibold">Interview:</span>
+<span class="text-on-surface">Required for International IB applicants</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Likelihood Dual Ratings & CTAs -->
+<div class="flex flex-col md:items-end justify-between shrink-0 gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">Cialfo AI Fit</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-bold">Reach (22%)</span>
+</div>
+<div class="flex flex-col items-end pl-2">
+<span class="font-label-sm text-label-sm text-outline">Counselor Verified</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-bold">Hard Reach</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-colors">
+                Guidance Notes
+              </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors">
+                External Link
+              </button>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-md -mb-space-md px-space-md pb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-outline">Requires MoE Tuition Grant nomination or full international student tariff</span>
+<span class="text-outline">Deadline: Feb 28, 2026</span>
+</div>
+</div>
+</div>
+<!-- RIGHT: Slide-over 'Overview Mini-Drawer' (PP-03 / Video 11 Fix) -->
+<!-- Sticky panel maintaining scroll position while viewing complete profile -->
+<div class="col-span-12 xl:col-span-4 sticky top-20 flex flex-col gap-space-sm bg-surface-container-lowest rounded-xl p-space-md shadow-lg border-2 border-primary/20">
+<!-- Drawer Header Bar -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold uppercase tracking-wider">Preview Inspector</span>
+<span class="font-body-sm text-body-sm text-outline">PP-03 Live View</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Campus Image Hero & Tour Teaser -->
+<div class="relative w-full h-44 rounded-lg overflow-hidden group shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Panoramic architectural view of the University of Edinburgh Old College historic quadrangle under a clear blue Scottish sky with lush lawn and neoclassical dome, bathed in bright morning sunlight, modern student campus life" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN0MOaFhP6pDFE8rmemyptXqFp-CNqSGkRLnKkzLUJJPf5JS05BPjc_7NGeEZe2OpWYmFtcjEzt2PiHAInMNNy4fsWnJmZRzZ_Z0YQdAsy9k4r6N1eEeGCOUm-b_oCHLZ4aMCmDgP4J-tiFcS00opBjbCDAc-glUkNk6xe0MJMueLr-W6dIT8xae3-owBZj5oN8N5FPC3GBCwxU9rnSvKt2YTtlChMEP8iVevGyFaohE-q-nfqI6Aypg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
+<div>
+<h3 class="font-title-md text-title-md font-bold leading-tight">University of Edinburgh</h3>
+<p class="font-label-sm text-label-sm text-slate-200">Russell Group • Edinburgh, Scotland</p>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-sm text-label-sm font-semibold hover:bg-white/30 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">360</span>
+<span>Virtual Tour</span>
+</button>
+</div>
+</div>
+<!-- Dedicated Advisor Shepherd Badge -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Professional headshot of a higher education admissions advisor smiling warmly in business casual attire with soft campus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGD9h8PUJdwvQc7lpfXEfNbCTWDMMu5JRqOlYkPFCznVDA4VpYDwDjXOxX_L1KCaiYppjFQuzoAIQXjo0r1S9ji6NIyeB6iSl6rvnoKPTb2geUNVNmqY9C2zxaTKb3F1oeMTvxmea16-Cnm3_u-qsiE-eiLv2rkTlOjgiOyyBc12F3l3fMnMoYNYQXy4rMRCkt6uFrJDT0mRoEV7T9Gn5xnfDE2dd-dze4H6DUCgl4SpZWS8y-82aT8Q"/>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Michael S.</span>
+<span class="material-symbols-outlined text-tertiary text-[14px]">verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Cialfo Dedicated Advisor Shepherd</p>
+</div>
+</div>
+<button class="px-space-sm py-1 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded-lg shadow-sm">
+          Chat Live
+        </button>
+</div>
+<!-- Direct Apply Perks & Flywire Status -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex flex-col justify-between">
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">electric_bolt</span>
+<span>Fee Waived</span>
+</div>
+<span class="font-title-md text-title-md font-extrabold mt-1">100% Free</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">Instant Direct Apply</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">credit_card</span>
+<span>Flywire Ready</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-primary mt-1">Direct Deposit</span>
+<span class="font-label-sm text-label-sm text-outline">SG$ → GBP Zero Markup</span>
+</div>
+</div>
+<!-- Essay Requirements & Prompts -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline uppercase tracking-wider">Required Essays (2)</span>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer hover:underline">Draft in Cialfo AI</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">1. UCAS Personal Statement</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Why do you want to study Computer Science and AI? Reflect on academic projects, hackathons, and intellectual inquiry (4,000 chars).
+          </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">2. Institutional Supplementary</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-outline font-bold">Unstarted</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Describe how your background at Singapore American School prepared you for Scotland's 4-year degree model (250 words).
+          </p>
+</div>
+</div>
+<!-- Action Buttons Anchored in Mini Drawer -->
+<div class="pt-space-xs flex flex-col gap-space-xs mt-auto">
+<button class="w-full py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-label-lg text-label-lg font-bold hover:bg-tertiary transition-colors flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Submit Direct Application Now</span>
+</button>
+<button class="w-full py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Save to My 2026 Target List</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

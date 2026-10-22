@@ -1,0 +1,1160 @@
+{
+  "counselor": {
+    "name": "David Nah (나경식)",
+    "english_name": "David Nah",
+    "korean_name": "나경식",
+    "role": "College Counselor & H11 Homeroom",
+    "school": "Leaders International School (LIS)",
+    "principal": "Paul Kim (김바울 - Headmaster / Principal)",
+    "vice_principal_secondary": "Kyu Mun Hwang (황규문 - Vice Principal / Computer Science)",
+    "h12_homeroom": "Peter Yoo (유찬호 - Chaplain / H12 Homeroom)",
+    "registrar": "Jae Lee (이재원 - Registrar / Secondary Student Services Director)",
+    "extension": "213",
+    "assigned_students": 17,
+    "total_cohort_12th": 17,
+    "total_cohort_11th": 8,
+    "total_cohort_10th": 18,
+    "total_cohort_9th": 15,
+    "total_high_school": 58
+  },
+  "cohort_metrics": {
+    "avg_countries_per_student": 3.2,
+    "total_applications_active": 109,
+    "direct_apply_adoption": "76%",
+    "total_fee_waivers_saved_usd": 24800,
+    "cdocs_dispatched_rate": "82%"
+  },
+  "cialfo_groups": [
+    {
+      "id": "grp-lis-1",
+      "name": "LIS US Early Decision & Action Cohort",
+      "student_count": 12,
+      "deadline": "Nov 1",
+      "status": "Transcripts & School Profile Dispatched via Parchment",
+      "tags": [
+        "Common App",
+        "ED/EA",
+        "Parchment"
+      ]
+    },
+    {
+      "id": "grp-lis-2",
+      "name": "LIS UK UCAS & Direct Apply Aspirants",
+      "student_count": 8,
+      "deadline": "Oct 15 / Jan 29",
+      "status": "Conditional Offer Full Term Tracking & Personal Statements",
+      "tags": [
+        "Direct Apply",
+        "UCAS",
+        "UK"
+      ]
+    },
+    {
+      "id": "grp-lis-3",
+      "name": "LIS Direct Apply Global Fast-Track (AU & CA)",
+      "student_count": 10,
+      "deadline": "Dec 15",
+      "status": "Fee Waivers Validated / Flywire Payment Integration",
+      "tags": [
+        "Direct Apply",
+        "Flywire",
+        "Australia"
+      ]
+    },
+    {
+      "id": "grp-lis-4",
+      "name": "LIS 9th & 10th Grade Career & Quest Cohort",
+      "student_count": 33,
+      "deadline": "End of Fall Term",
+      "status": "3-Tier Psychometric & Personality Assessment",
+      "tags": [
+        "Quest",
+        "Career",
+        "Freshmen"
+      ]
+    }
+  ],
+  "students_table": [
+    {
+      "id": "2019F0501",
+      "name": "김현도 (HYUNDO KIM)",
+      "english_name": "Hyundo",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "UK"
+      ],
+      "apps_count": 5,
+      "cdocs_status": "Ready to Send",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Target",
+      "father": "김동성",
+      "mother": "임해영",
+      "cell": "010-5515-7397",
+      "top_choice": "Imperial College London (Computing)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2019F0502",
+      "name": "조수민 (SUMIN CHO)",
+      "english_name": "Ella",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "AU"
+      ],
+      "apps_count": 6,
+      "cdocs_status": "Dispatched",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Reach",
+      "father": "조기웅",
+      "mother": "정미경",
+      "cell": "010-9003-9929",
+      "top_choice": "UC Berkeley (EECS)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2021S0603",
+      "name": "김하늘 (HANUL KIM)",
+      "english_name": "Rachel",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "UK",
+        "CA"
+      ],
+      "apps_count": 7,
+      "cdocs_status": "Missing Teacher Rec",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Likely",
+      "father": "김수민",
+      "mother": "이경민",
+      "cell": "010-9075-4581",
+      "top_choice": "Stanford University (Symbolic Systems)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2021S0604",
+      "name": "김세현 (SEHYUN KIM)",
+      "english_name": "Daniel",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "KR"
+      ],
+      "apps_count": 8,
+      "cdocs_status": "Drafting Essays",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Target",
+      "father": "김경선",
+      "mother": "조보배",
+      "cell": "010-6355-6278",
+      "top_choice": "Carnegie Mellon (Robotics)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2018S0301",
+      "name": "김세린 (SERIN KIM)",
+      "english_name": "Serin",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "UK",
+        "AU",
+        "US"
+      ],
+      "apps_count": 5,
+      "cdocs_status": "Approved to Send",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Reach",
+      "father": "김성민",
+      "mother": "이은주",
+      "cell": "010-4034-0891",
+      "top_choice": "Columbia University (Financial Econ)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2023F1305",
+      "name": "손예나 (YENA SON)",
+      "english_name": "Yena",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "SG"
+      ],
+      "apps_count": 6,
+      "cdocs_status": "Ready to Send",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Target",
+      "father": "손대진",
+      "mother": "박경아",
+      "cell": "010-4467-1895",
+      "top_choice": "NYU Stern (Business & Tech)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2024S1343",
+      "name": "김민기 (MINKI KIM)",
+      "english_name": "Minki",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "CA"
+      ],
+      "apps_count": 7,
+      "cdocs_status": "Dispatched",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Reach",
+      "father": "김학수",
+      "mother": "이희원",
+      "cell": "010-8730-1286",
+      "top_choice": "University of Toronto (Engineering)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2024S1325",
+      "name": "윤서영 (SEOYOUNG YOON)",
+      "english_name": "Sophia",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "UK"
+      ],
+      "apps_count": 8,
+      "cdocs_status": "Missing Teacher Rec",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Likely",
+      "father": "Billy Yoon",
+      "mother": "임선혜",
+      "cell": "010-8306-9016",
+      "top_choice": "NUS Singapore (Data Science)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2024S1338",
+      "name": "이도현 (DOHYUN LEE)",
+      "english_name": "Ethan",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "AU"
+      ],
+      "apps_count": 5,
+      "cdocs_status": "Drafting Essays",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Target",
+      "father": "이준표",
+      "mother": "전은숙",
+      "cell": "010-8203-7585",
+      "top_choice": "Georgia Tech (Aerospace)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2024F1369",
+      "name": "탁세은 (SE EUN TAK)",
+      "english_name": "Renee",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "UK",
+        "CA"
+      ],
+      "apps_count": 6,
+      "cdocs_status": "Approved to Send",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Reach",
+      "father": "탁문수",
+      "mother": "김훈진",
+      "cell": "010-9650-7738",
+      "top_choice": "UCL (Architecture & Urban Planning)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2024F1368",
+      "name": "김은솔 (EUNSOL KIM)",
+      "english_name": "Joy",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "KR"
+      ],
+      "apps_count": 7,
+      "cdocs_status": "Ready to Send",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Target",
+      "father": "김현진",
+      "mother": "신영아",
+      "cell": "010-5946-9946",
+      "top_choice": "Imperial College London (Computing)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2025S1399",
+      "name": "천수민 (KAILYN SUMIN CHEON)",
+      "english_name": "Kailyn Cheon",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "UK",
+        "AU",
+        "US"
+      ],
+      "apps_count": 8,
+      "cdocs_status": "Dispatched",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Reach",
+      "father": "천상현",
+      "mother": "김성경",
+      "cell": "010-4188-0394",
+      "top_choice": "UC Berkeley (EECS)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2025F1412",
+      "name": "김태림 (TAERIM KIM)",
+      "english_name": "Terry",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "SG"
+      ],
+      "apps_count": 5,
+      "cdocs_status": "Missing Teacher Rec",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Likely",
+      "father": "김영일",
+      "mother": "조자영",
+      "cell": "010-3173-7066",
+      "top_choice": "Stanford University (Symbolic Systems)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2025F1418",
+      "name": "김민경 (SOPHIA M. KIM)",
+      "english_name": "Sophia",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "CA"
+      ],
+      "apps_count": 6,
+      "cdocs_status": "Drafting Essays",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Target",
+      "father": "김종성",
+      "mother": "조희주",
+      "cell": "010-8858-7260",
+      "top_choice": "Carnegie Mellon (Robotics)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2024F1356",
+      "name": "김현서 (HYUNSEO KIM)",
+      "english_name": "David",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "UK"
+      ],
+      "apps_count": 7,
+      "cdocs_status": "Approved to Send",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Reach",
+      "father": "김기율",
+      "mother": "김진옥",
+      "cell": "010-9232-6456",
+      "top_choice": "Columbia University (Financial Econ)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2026S1444",
+      "name": "한예원 (YEWON HAN)",
+      "english_name": "Olivia",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "US",
+        "AU"
+      ],
+      "apps_count": 8,
+      "cdocs_status": "Ready to Send",
+      "first_deadline": "Nov 15",
+      "counselor_likelihood_override": "Target",
+      "father": "한현진",
+      "mother": "이지은",
+      "cell": "010-6335-2656",
+      "top_choice": "NYU Stern (Business & Tech)",
+      "next_deadline": "Nov 15"
+    },
+    {
+      "id": "2025S1387",
+      "name": "이예윤 (YEYUN LEE)",
+      "english_name": "Rachel",
+      "grade": "12",
+      "section": "H12",
+      "homeroom_teacher": "Peter Yoo",
+      "persona": "Applying Alpaca",
+      "curriculum": "AP & Honors (GPA 3.85-3.98)",
+      "target_countries": [
+        "UK",
+        "CA"
+      ],
+      "apps_count": 5,
+      "cdocs_status": "Dispatched",
+      "first_deadline": "Nov 1 (Early Decision)",
+      "counselor_likelihood_override": "Reach",
+      "father": "이용현",
+      "mother": "김정명",
+      "cell": "010-3791-6116",
+      "top_choice": "University of Toronto (Engineering)",
+      "next_deadline": "Nov 1 (Early Decision)"
+    },
+    {
+      "id": "2019S0104",
+      "name": "한온유 (ONYOO HAN)",
+      "english_name": "On Yoo",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "한만희",
+      "mother": "정선영",
+      "cell": "010-5163-1889",
+      "top_choice": "NUS Singapore (Data Science)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2021S0302",
+      "name": "이희엘 (HEEEL LEE)",
+      "english_name": "Heeel",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "이성만",
+      "mother": "윤소연",
+      "cell": "010-9114-9518",
+      "top_choice": "Georgia Tech (Aerospace)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2022F0612",
+      "name": "김형서 (HYUNG SEO KIM)",
+      "english_name": "Freshman",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "김경섭",
+      "mother": "임연정",
+      "cell": "010-6844-0369",
+      "top_choice": "UCL (Architecture & Urban Planning)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2018F0104",
+      "name": "김설린 (SEOLRIN KIM)",
+      "english_name": "SeolRin",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "김성민",
+      "mother": "이은주",
+      "cell": "010-4034-0891",
+      "top_choice": "Imperial College London (Computing)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2024S1342",
+      "name": "구하은 (HAEUN KOO)",
+      "english_name": "Haeun",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "구자윤",
+      "mother": "정인애",
+      "cell": "010-5578-2411",
+      "top_choice": "UC Berkeley (EECS)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2024S1316",
+      "name": "김경천 (KYUNGCHUN KIM)",
+      "english_name": "Kyungchun",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "김동선",
+      "mother": "박미진",
+      "cell": "010-3993-5452",
+      "top_choice": "Stanford University (Symbolic Systems)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2024S1320",
+      "name": "유하준 (HAJUN RYU)",
+      "english_name": "Hajun",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "유채훈",
+      "mother": "양효진",
+      "cell": "010-7178-6088",
+      "top_choice": "Carnegie Mellon (Robotics)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2024F1370",
+      "name": "탁태원 (TAEWON TAK)",
+      "english_name": "Taewon",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "탁문수",
+      "mother": "김훈진",
+      "cell": "010-9650-7738",
+      "top_choice": "Columbia University (Financial Econ)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2024F1362",
+      "name": "최윤권 (YOONKWON CHOI)",
+      "english_name": "Yoon Kwon",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "최현수",
+      "mother": "장지윤",
+      "cell": "010-2594-4653",
+      "top_choice": "NYU Stern (Business & Tech)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2025S1384",
+      "name": "김민준 (MINJUN KIM)",
+      "english_name": "Minjun",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "김상호",
+      "mother": "홍혜전",
+      "cell": "010-5267-0578",
+      "top_choice": "University of Toronto (Engineering)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2025F1401",
+      "name": "송유빈 (YUVIN SONG)",
+      "english_name": "Yuvin",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "송영환",
+      "mother": "나경화",
+      "cell": "010-8825-8599",
+      "top_choice": "NUS Singapore (Data Science)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2026F1455",
+      "name": "김윤아 (YUNA KIM)",
+      "english_name": "yuna",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "김성욱",
+      "mother": "박소희",
+      "cell": "010-9300-2584",
+      "top_choice": "Georgia Tech (Aerospace)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2026F1457",
+      "name": "김리원 (RIWON KIM)",
+      "english_name": "Brian",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "김도일",
+      "mother": "최희조",
+      "cell": "010-3059-0219",
+      "top_choice": "UCL (Architecture & Urban Planning)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2026S1430",
+      "name": "이지민 (JIMIN LEE)",
+      "english_name": "Ellie",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Curious Capybara",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "In Progress",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "이원근",
+      "mother": "최선정",
+      "cell": "010-3907-7605",
+      "top_choice": "Imperial College London (Computing)",
+      "next_deadline": "N/A"
+    },
+    {
+      "id": "2025F1404",
+      "name": "임하람 (JOSEPH H. IM)",
+      "english_name": "Joseph",
+      "grade": "9",
+      "section": "H9",
+      "homeroom_teacher": "Michelle Lee",
+      "persona": "Exploring Elephant",
+      "curriculum": "High School Pre-College Prep",
+      "target_countries": [
+        "Undecided"
+      ],
+      "apps_count": 0,
+      "cdocs_status": "Career Assessment Complete",
+      "first_deadline": "N/A",
+      "counselor_likelihood_override": "N/A",
+      "father": "임승혁",
+      "mother": "이현숙",
+      "cell": "010-8890-0450",
+      "top_choice": "UC Berkeley (EECS)",
+      "next_deadline": "N/A"
+    }
+  ],
+  "alumni_scattergram_network": [
+    {
+      "university": "Imperial College London",
+      "alumni_name": "Min-woo Park (LIS '23)",
+      "program": "BSc Computing",
+      "admit_stats": "GPA 3.96, SAT 1540",
+      "mentorship_available": true,
+      "email": "minwoo.park.alumni@lis.ac.kr"
+    },
+    {
+      "university": "New York University (Stern)",
+      "alumni_name": "Ji-won Kang (LIS '24)",
+      "program": "BS Business & Finance",
+      "admit_stats": "GPA 3.95, SAT 1520",
+      "mentorship_available": true,
+      "email": "jiwon.kang.alumni@lis.ac.kr"
+    },
+    {
+      "university": "University of Sydney",
+      "alumni_name": "Hyun-woo Lee (LIS '22)",
+      "program": "Bachelor of Advanced Computing",
+      "admit_stats": "GPA 3.82, SAT 1460",
+      "mentorship_available": true,
+      "email": "hyunwoo.lee.alumni@lis.ac.kr"
+    }
+  ],
+  "faculty_directory": [
+    {
+      "no": 1,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, MINISTRY",
+      "korean_name": "김바울",
+      "english_name": "PAUL KIM",
+      "display_name": "PAUL KIM (김바울)",
+      "role": "Headmaster / Principal",
+      "extension": "230"
+    },
+    {
+      "no": 2,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE",
+      "korean_name": "박영희",
+      "english_name": "ESTHER KIM",
+      "display_name": "ESTHER KIM (박영희)",
+      "role": "Chief Business Officer",
+      "extension": "101"
+    },
+    {
+      "no": 3,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE",
+      "korean_name": "김지이",
+      "english_name": "GRACE KIM",
+      "display_name": "GRACE KIM (김지이)",
+      "role": "Deputy Principal",
+      "extension": ""
+    },
+    {
+      "no": 4,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING, MINISTRY",
+      "korean_name": "유찬호",
+      "english_name": "PETER YOO",
+      "display_name": "PETER YOO (유찬호)",
+      "role": "Chaplain / H12Homeroom / Bible",
+      "extension": ""
+    },
+    {
+      "no": 5,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING",
+      "korean_name": "황규문",
+      "english_name": "KYU MUN HWANG",
+      "display_name": "KYU MUN HWANG (황규문)",
+      "role": "Vice Principal (Secondary) / Computer Science",
+      "extension": "214"
+    },
+    {
+      "no": 6,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, COMMUTING",
+      "korean_name": "이환희",
+      "english_name": "DANIEL LEE",
+      "display_name": "DANIEL LEE (이환희)",
+      "role": "Business Director",
+      "extension": "102"
+    },
+    {
+      "no": 7,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE",
+      "korean_name": "하지현",
+      "english_name": "SALLY HA",
+      "display_name": "SALLY HA (하지현)",
+      "role": "Vice Principal (Elementary)",
+      "extension": "206"
+    },
+    {
+      "no": 8,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING",
+      "korean_name": "이재원",
+      "english_name": "JAE LEE",
+      "display_name": "JAE LEE (이재원)",
+      "role": "M8 Homeroom / History / Director of Student Services (Secondary) / Registrar",
+      "extension": "221"
+    },
+    {
+      "no": 9,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING",
+      "korean_name": "김혜정",
+      "english_name": "HYE JUNG KIM",
+      "display_name": "HYE JUNG KIM (김혜정)",
+      "role": "Librarian / Korean",
+      "extension": "110"
+    },
+    {
+      "no": 10,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING, PA/CA/ML, COMMUTING",
+      "korean_name": "평상규",
+      "english_name": "DANNY PYUNG",
+      "display_name": "DANNY PYUNG (평상규)",
+      "role": "Math / Physical Education",
+      "extension": "205"
+    },
+    {
+      "no": 11,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE",
+      "korean_name": "김선경",
+      "english_name": "JOY KIM",
+      "display_name": "JOY KIM (김선경)",
+      "role": "Admissions Director / Director of Student Service (Elementary)",
+      "extension": "112"
+    },
+    {
+      "no": 12,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING",
+      "korean_name": "리킹",
+      "english_name": "LEIGH KING",
+      "display_name": "LEIGH KING (리킹)",
+      "role": "Director of Curriculum & Instruction",
+      "extension": "115"
+    },
+    {
+      "no": 13,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE",
+      "korean_name": "이주형",
+      "english_name": "JIMMY LEE",
+      "display_name": "JIMMY LEE (이주형)",
+      "role": "Admin Staff, Extracurriclular Coordinator",
+      "extension": "113"
+    },
+    {
+      "no": 14,
+      "employment": "Full-Time",
+      "division": "ADMININSTRATIVE, TEACHING",
+      "korean_name": "나경식",
+      "english_name": "DAVID NAH",
+      "display_name": "DAVID NAH (나경식)",
+      "role": "H11 Homeroom / College Counselor",
+      "extension": "213"
+    },
+    {
+      "no": 16,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "진해리(휴직중)",
+      "english_name": "HAELEE JIN",
+      "display_name": "HAELEE JIN (진해리(휴직중))",
+      "role": "",
+      "extension": ""
+    },
+    {
+      "no": 17,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "임그린",
+      "english_name": "GREEN LIM",
+      "display_name": "GREEN LIM (임그린)",
+      "role": "E1 Homeroom",
+      "extension": "103"
+    },
+    {
+      "no": 18,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "유윤정",
+      "english_name": "YUN JEONG YU",
+      "display_name": "YUN JEONG YU (유윤정)",
+      "role": "E3 Homeroom",
+      "extension": "105"
+    },
+    {
+      "no": 19,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "박예진",
+      "english_name": "JINNY PARK",
+      "display_name": "JINNY PARK (박예진)",
+      "role": "E4 Homeroom",
+      "extension": "106"
+    },
+    {
+      "no": 20,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "에크남 바자즈",
+      "english_name": "EKNAM BAJAJ",
+      "display_name": "EKNAM BAJAJ (에크남 바자즈)",
+      "role": "E2 Homeroom / Elementary Lead Teacher",
+      "extension": "104"
+    },
+    {
+      "no": 21,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "박진희",
+      "english_name": "CHRISTINE PARK",
+      "display_name": "CHRISTINE PARK (박진희)",
+      "role": "H10 Homeroom / Korean / Physical Education",
+      "extension": "202"
+    },
+    {
+      "no": 22,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "이영은",
+      "english_name": "MICHELLE LEE",
+      "display_name": "MICHELLE LEE (이영은)",
+      "role": "H9 Homeroom / MS English B",
+      "extension": "203"
+    },
+    {
+      "no": 23,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "데니얼 김",
+      "english_name": "DANIEL KIM",
+      "display_name": "DANIEL KIM (데니얼 김)",
+      "role": "E5 Homeroom / English",
+      "extension": "107"
+    },
+    {
+      "no": 24,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "강소라",
+      "english_name": "SORA KANG",
+      "display_name": "SORA KANG (강소라)",
+      "role": "M7 Homeroom / Science",
+      "extension": "207"
+    },
+    {
+      "no": 25,
+      "employment": "Full-Time",
+      "division": "FACILITY",
+      "korean_name": "정봉자",
+      "english_name": "",
+      "display_name": "정봉자",
+      "role": "Custodial Services",
+      "extension": ""
+    },
+    {
+      "no": 26,
+      "employment": "Full-Time",
+      "division": "FACILITY",
+      "korean_name": "김용오",
+      "english_name": "",
+      "display_name": "김용오",
+      "role": "Facilities",
+      "extension": ""
+    },
+    {
+      "no": 27,
+      "employment": "Full-Time",
+      "division": "TEACHING",
+      "korean_name": "류미연",
+      "english_name": "MONICA YU",
+      "display_name": "MONICA YU (류미연)",
+      "role": "Math, English(A)",
+      "extension": ""
+    },
+    {
+      "no": 28,
+      "employment": "Part-Time",
+      "division": "TEACHING",
+      "korean_name": "문성환(한국사, 사회)",
+      "english_name": "",
+      "display_name": "문성환(한국사, 사회)",
+      "role": "Korean History",
+      "extension": ""
+    },
+    {
+      "no": 29,
+      "employment": "Part-Time",
+      "division": "TEACHING",
+      "korean_name": "곽혜미(수학)",
+      "english_name": "HAEMI KWAK",
+      "display_name": "HAEMI KWAK (곽혜미(수학))",
+      "role": "Math",
+      "extension": ""
+    },
+    {
+      "no": 30,
+      "employment": "Part-Time",
+      "division": "TEACHING, PA/CA/ML",
+      "korean_name": "김성희(미술)",
+      "english_name": "SUNGHEE KIM",
+      "display_name": "SUNGHEE KIM (김성희(미술))",
+      "role": "Art",
+      "extension": ""
+    },
+    {
+      "no": 31,
+      "employment": "Part-Time",
+      "division": "TEACHING",
+      "korean_name": "김보미(음악)",
+      "english_name": "",
+      "display_name": "김보미(음악)",
+      "role": "Music",
+      "extension": ""
+    },
+    {
+      "no": 32,
+      "employment": "Part-Time",
+      "division": "TEACHING",
+      "korean_name": "황지선(중국어)",
+      "english_name": "JISUN HWANG",
+      "display_name": "JISUN HWANG (황지선(중국어))",
+      "role": "Chinese",
+      "extension": ""
+    },
+    {
+      "no": 33,
+      "employment": "Part-Time",
+      "division": "ADMININSTRATIVE",
+      "korean_name": "이은주",
+      "english_name": "PAULINE LEE",
+      "display_name": "PAULINE LEE (이은주)",
+      "role": "Admin Staff",
+      "extension": ""
+    },
+    {
+      "no": 34,
+      "employment": "Part-Time",
+      "division": "TEACHING, PA/CA/ML",
+      "korean_name": "김남균",
+      "english_name": "STEVEN KIM",
+      "display_name": "STEVEN KIM (김남균)",
+      "role": "Youth Pot Director / Visual Arts Major Program",
+      "extension": ""
+    }
+  ]
+}
